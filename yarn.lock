@@ -214,7 +214,6 @@
   resolved "https://codeload.github.com/chalkysticks/sdk-core/tar.gz/655bf2a7e4ba6540fcd93bd1c3ba139055054671"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
-    esbuild "^0.16.10"
     restmc "git+https://github.com/mattkenefick/restmc.git"
 
 "@chalkysticks/sdk-pad@github:chalkysticks/sdk-pad#v2":
