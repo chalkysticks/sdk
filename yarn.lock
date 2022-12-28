@@ -211,9 +211,10 @@
 
 "@chalkysticks/sdk-core@github:chalkysticks/sdk-core":
   version "1.1.1"
-  resolved "https://codeload.github.com/chalkysticks/sdk-core/tar.gz/655bf2a7e4ba6540fcd93bd1c3ba139055054671"
+  resolved "https://codeload.github.com/chalkysticks/sdk-core/tar.gz/21a35fcff5851acd512fcf69095c41c3b2e99321"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
+    esbuild "^0.16.10"
     restmc "git+https://github.com/mattkenefick/restmc.git"
 
 "@chalkysticks/sdk-pad@github:chalkysticks/sdk-pad#v2":
@@ -238,8 +239,8 @@
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
 
 "@chalkysticks/sdk-venues@github:chalkysticks/sdk-venues#v1":
-  version "1.0.11"
-  resolved "https://codeload.github.com/chalkysticks/sdk-venues/tar.gz/50c8130b3ac0a15057382be4fd564f08edc96d83"
+  version "1.0.12"
+  resolved "https://codeload.github.com/chalkysticks/sdk-venues/tar.gz/2d4dedea0a69159934a33a73988be5fe7e55b565"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
@@ -2076,8 +2077,8 @@ resolve-from@^5.0.0:
   integrity sha512-qYg9KP24dD5qka9J47d0aVky0N+b4fTU89LN9iDnjB5waksiC49rvMB0PrUJQGoTmH50XPiqOvAjDfaijGxYZw==
 
 "restmc@git+https://github.com/mattkenefick/restmc.git":
-  version "0.8.0"
-  resolved "git+https://github.com/mattkenefick/restmc.git#f6113daf6a8bc175fa4a56f6d11a000a8c48df8e"
+  version "0.9.0"
+  resolved "git+https://github.com/mattkenefick/restmc.git#37fbe3f8cdf13323b922354cf9e85c9a7fb32673"
   dependencies:
     "@types/node-fetch" "^2.5.7"
     axios "^0.21.4"
