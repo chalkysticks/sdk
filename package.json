@@ -58,9 +58,9 @@
     "scripts": {
         "build": "tsc -p tsconfig.json && tsc -p tsconfig.cjs.json && yarn build:web && bash ./tool/create-packages.sh",
         "build:web": "./node_modules/.bin/esbuild src/index.ts --bundle --minify --sourcemap --target=chrome62 --format=esm --outfile=build/web/chalkysticks.js",
-        "reinstall": "rm -rf ./node_modules/ && rm yarn.lock && yarn install && yarn build",
+        "reinstall": "rm -rf ./node_modules/; rm yarn.lock; yarn install; yarn build",
         "test": "ts-mocha -p ./node_modules/@chalkysticks/mrm-preset/tsconfig.test.json test/**/*.spec.ts",
-        "version": "git add -A src"
+        "version": "npm version minor"
     },
     "types": "build/esm/index.d.ts",
     "version": "1.1.1"
