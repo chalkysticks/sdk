@@ -1,21 +1,24 @@
 import { expect } from 'chai';
-import { ModelAuthentication, CollectionBase } from '../src/index';
+import { Collection, Constants, Enum, Environment, EventDispatcher, Exception, Model, Provider } from '../src/index';
+
+const model: Model.Player = new Model.Player({
+    id: 1,
+	name: 'Matt Kenefick',
+});
 
 /**
- * CollectionBase Test
+ * Model Player Test
  */
-describe('CollectionBase', () => {
+describe('ModelPlayer', () => {
+    it('should have a name', () => {
+		console.log(Constants);
+		console.log(Exception);
+		console.log(Provider);
+		console.log(Environment);
+		console.log(EventDispatcher);
 
-    it('should have length', () => {
-        // const collection: CollectionBase = new CollectionBase();
+		const name = model.getName();
 
-        // collection.add(new ModelBase);
-        // collection.add(new ModelBase);
-        // collection.add(new ModelBase);
-        // collection.add(new ModelBase);
-        // collection.add(new ModelBase);
-
-        // expect(collection.length).to.equal(5);
+        expect(name).to.equal('Matt Kenefick');
     });
-
 });

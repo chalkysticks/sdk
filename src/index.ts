@@ -1,41 +1,30 @@
+import * as Core from '@chalkysticks/sdk-core';
+import * as Authentication from '@chalkysticks/sdk-authentication';
+import * as Pad from '@chalkysticks/sdk-pad';
+import * as Players from '@chalkysticks/sdk-players';
+import * as Tv from '@chalkysticks/sdk-tv';
+import * as Venues from '@chalkysticks/sdk-venues';
+import * as Wallet from '@chalkysticks/sdk-wallet';
 
-export { ModelAuthentication } from '@chalkysticks/sdk-authentication';
-export { ModelJwt } from '@chalkysticks/sdk-authentication';
+export * from '@chalkysticks/sdk-core';
 
 export { default as ChalkySticks } from '@chalkysticks/sdk-core';
-export { CollectionBase } from '@chalkysticks/sdk-core';
-export { CollectionUser } from '@chalkysticks/sdk-core';
-export { Constants } from '@chalkysticks/sdk-core';
-export { Core } from '@chalkysticks/sdk-core';
-export { Debounce } from '@chalkysticks/sdk-core';
-export { EnumBase } from '@chalkysticks/sdk-core';
-export { Environment } from '@chalkysticks/sdk-core';
-export { EventDispatcher } from '@chalkysticks/sdk-core';
-export { ExceptionConnectionRefused } from '@chalkysticks/sdk-core';
-export { ExceptionInvalidInput } from '@chalkysticks/sdk-core';
-export { ExceptionInvalidRenderer } from '@chalkysticks/sdk-core';
-export { ExceptionInvalidStorageProvider } from '@chalkysticks/sdk-core';
-export { ExceptionNotImplemented } from '@chalkysticks/sdk-core';
-export { ExceptionParserFailure } from '@chalkysticks/sdk-core';
-export { ExceptionUnauthorized } from '@chalkysticks/sdk-core';
-export { ModelBase } from '@chalkysticks/sdk-core';
-export { ModelUser } from '@chalkysticks/sdk-core';
-export { StoreProvider } from '@chalkysticks/sdk-core';
 
-export { CollectionDiagram } from '@chalkysticks/sdk-pad';
-export { ModelDiagram } from '@chalkysticks/sdk-pad';
+export const Collection = {
+	...Core.Collection,
+	...Pad.Collection,
+	...Players.Collection,
+	...Tv.Collection,
+	...Venues.Collection,
+	...Wallet.Collection,
+}
 
-export { CollectionPlayer } from '@chalkysticks/sdk-players';
-export { ModelPlayer } from '@chalkysticks/sdk-players';
-
-export { CollectionSchedule } from '@chalkysticks/sdk-tv';
-export { ModelSchedule } from '@chalkysticks/sdk-tv';
-
-export { CollectionVenue } from '@chalkysticks/sdk-venues';
-export { CollectionVenueDetail } from '@chalkysticks/sdk-venues';
-export { CollectionVenueMedia } from '@chalkysticks/sdk-venues';
-export { CollectionVenueMeta } from '@chalkysticks/sdk-venues';
-export { ModelVenue } from '@chalkysticks/sdk-venues';
-export { ModelVenueDetail } from '@chalkysticks/sdk-venues';
-export { ModelVenueMedia } from '@chalkysticks/sdk-venues';
-export { ModelVenueMeta } from '@chalkysticks/sdk-venues';
+export const Model = {
+	...Core.Model,
+	...Authentication.Model,
+	...Pad.Model,
+	...Players.Model,
+	...Tv.Model,
+	...Venues.Model,
+	...Wallet.Model,
+}

@@ -1,74 +1,45 @@
 "use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ModelVenueMeta = exports.ModelVenueMedia = exports.ModelVenueDetail = exports.ModelVenue = exports.CollectionVenueMeta = exports.CollectionVenueMedia = exports.CollectionVenueDetail = exports.CollectionVenue = exports.ModelSchedule = exports.CollectionSchedule = exports.ModelPlayer = exports.CollectionPlayer = exports.ModelDiagram = exports.CollectionDiagram = exports.StoreProvider = exports.ModelUser = exports.ModelBase = exports.ExceptionUnauthorized = exports.ExceptionParserFailure = exports.ExceptionNotImplemented = exports.ExceptionInvalidStorageProvider = exports.ExceptionInvalidRenderer = exports.ExceptionInvalidInput = exports.ExceptionConnectionRefused = exports.EventDispatcher = exports.Environment = exports.EnumBase = exports.Debounce = exports.Core = exports.Constants = exports.CollectionUser = exports.CollectionBase = exports.ChalkySticks = exports.ModelJwt = exports.ModelAuthentication = void 0;
-var sdk_authentication_1 = require("@chalkysticks/sdk-authentication");
-Object.defineProperty(exports, "ModelAuthentication", { enumerable: true, get: function () { return sdk_authentication_1.ModelAuthentication; } });
-var sdk_authentication_2 = require("@chalkysticks/sdk-authentication");
-Object.defineProperty(exports, "ModelJwt", { enumerable: true, get: function () { return sdk_authentication_2.ModelJwt; } });
+exports.Model = exports.Collection = exports.ChalkySticks = void 0;
+const Core = __importStar(require("@chalkysticks/sdk-core"));
+const Authentication = __importStar(require("@chalkysticks/sdk-authentication"));
+const Pad = __importStar(require("@chalkysticks/sdk-pad"));
+const Players = __importStar(require("@chalkysticks/sdk-players"));
+const Tv = __importStar(require("@chalkysticks/sdk-tv"));
+const Venues = __importStar(require("@chalkysticks/sdk-venues"));
+const Wallet = __importStar(require("@chalkysticks/sdk-wallet"));
+__exportStar(require("@chalkysticks/sdk-core"), exports);
 var sdk_core_1 = require("@chalkysticks/sdk-core");
-Object.defineProperty(exports, "ChalkySticks", { enumerable: true, get: function () { return sdk_core_1.default; } });
-var sdk_core_2 = require("@chalkysticks/sdk-core");
-Object.defineProperty(exports, "CollectionBase", { enumerable: true, get: function () { return sdk_core_2.CollectionBase; } });
-var sdk_core_3 = require("@chalkysticks/sdk-core");
-Object.defineProperty(exports, "CollectionUser", { enumerable: true, get: function () { return sdk_core_3.CollectionUser; } });
-var sdk_core_4 = require("@chalkysticks/sdk-core");
-Object.defineProperty(exports, "Constants", { enumerable: true, get: function () { return sdk_core_4.Constants; } });
-var sdk_core_5 = require("@chalkysticks/sdk-core");
-Object.defineProperty(exports, "Core", { enumerable: true, get: function () { return sdk_core_5.Core; } });
-var sdk_core_6 = require("@chalkysticks/sdk-core");
-Object.defineProperty(exports, "Debounce", { enumerable: true, get: function () { return sdk_core_6.Debounce; } });
-var sdk_core_7 = require("@chalkysticks/sdk-core");
-Object.defineProperty(exports, "EnumBase", { enumerable: true, get: function () { return sdk_core_7.EnumBase; } });
-var sdk_core_8 = require("@chalkysticks/sdk-core");
-Object.defineProperty(exports, "Environment", { enumerable: true, get: function () { return sdk_core_8.Environment; } });
-var sdk_core_9 = require("@chalkysticks/sdk-core");
-Object.defineProperty(exports, "EventDispatcher", { enumerable: true, get: function () { return sdk_core_9.EventDispatcher; } });
-var sdk_core_10 = require("@chalkysticks/sdk-core");
-Object.defineProperty(exports, "ExceptionConnectionRefused", { enumerable: true, get: function () { return sdk_core_10.ExceptionConnectionRefused; } });
-var sdk_core_11 = require("@chalkysticks/sdk-core");
-Object.defineProperty(exports, "ExceptionInvalidInput", { enumerable: true, get: function () { return sdk_core_11.ExceptionInvalidInput; } });
-var sdk_core_12 = require("@chalkysticks/sdk-core");
-Object.defineProperty(exports, "ExceptionInvalidRenderer", { enumerable: true, get: function () { return sdk_core_12.ExceptionInvalidRenderer; } });
-var sdk_core_13 = require("@chalkysticks/sdk-core");
-Object.defineProperty(exports, "ExceptionInvalidStorageProvider", { enumerable: true, get: function () { return sdk_core_13.ExceptionInvalidStorageProvider; } });
-var sdk_core_14 = require("@chalkysticks/sdk-core");
-Object.defineProperty(exports, "ExceptionNotImplemented", { enumerable: true, get: function () { return sdk_core_14.ExceptionNotImplemented; } });
-var sdk_core_15 = require("@chalkysticks/sdk-core");
-Object.defineProperty(exports, "ExceptionParserFailure", { enumerable: true, get: function () { return sdk_core_15.ExceptionParserFailure; } });
-var sdk_core_16 = require("@chalkysticks/sdk-core");
-Object.defineProperty(exports, "ExceptionUnauthorized", { enumerable: true, get: function () { return sdk_core_16.ExceptionUnauthorized; } });
-var sdk_core_17 = require("@chalkysticks/sdk-core");
-Object.defineProperty(exports, "ModelBase", { enumerable: true, get: function () { return sdk_core_17.ModelBase; } });
-var sdk_core_18 = require("@chalkysticks/sdk-core");
-Object.defineProperty(exports, "ModelUser", { enumerable: true, get: function () { return sdk_core_18.ModelUser; } });
-var sdk_core_19 = require("@chalkysticks/sdk-core");
-Object.defineProperty(exports, "StoreProvider", { enumerable: true, get: function () { return sdk_core_19.StoreProvider; } });
-var sdk_pad_1 = require("@chalkysticks/sdk-pad");
-Object.defineProperty(exports, "CollectionDiagram", { enumerable: true, get: function () { return sdk_pad_1.CollectionDiagram; } });
-var sdk_pad_2 = require("@chalkysticks/sdk-pad");
-Object.defineProperty(exports, "ModelDiagram", { enumerable: true, get: function () { return sdk_pad_2.ModelDiagram; } });
-var sdk_players_1 = require("@chalkysticks/sdk-players");
-Object.defineProperty(exports, "CollectionPlayer", { enumerable: true, get: function () { return sdk_players_1.CollectionPlayer; } });
-var sdk_players_2 = require("@chalkysticks/sdk-players");
-Object.defineProperty(exports, "ModelPlayer", { enumerable: true, get: function () { return sdk_players_2.ModelPlayer; } });
-var sdk_tv_1 = require("@chalkysticks/sdk-tv");
-Object.defineProperty(exports, "CollectionSchedule", { enumerable: true, get: function () { return sdk_tv_1.CollectionSchedule; } });
-var sdk_tv_2 = require("@chalkysticks/sdk-tv");
-Object.defineProperty(exports, "ModelSchedule", { enumerable: true, get: function () { return sdk_tv_2.ModelSchedule; } });
-var sdk_venues_1 = require("@chalkysticks/sdk-venues");
-Object.defineProperty(exports, "CollectionVenue", { enumerable: true, get: function () { return sdk_venues_1.CollectionVenue; } });
-var sdk_venues_2 = require("@chalkysticks/sdk-venues");
-Object.defineProperty(exports, "CollectionVenueDetail", { enumerable: true, get: function () { return sdk_venues_2.CollectionVenueDetail; } });
-var sdk_venues_3 = require("@chalkysticks/sdk-venues");
-Object.defineProperty(exports, "CollectionVenueMedia", { enumerable: true, get: function () { return sdk_venues_3.CollectionVenueMedia; } });
-var sdk_venues_4 = require("@chalkysticks/sdk-venues");
-Object.defineProperty(exports, "CollectionVenueMeta", { enumerable: true, get: function () { return sdk_venues_4.CollectionVenueMeta; } });
-var sdk_venues_5 = require("@chalkysticks/sdk-venues");
-Object.defineProperty(exports, "ModelVenue", { enumerable: true, get: function () { return sdk_venues_5.ModelVenue; } });
-var sdk_venues_6 = require("@chalkysticks/sdk-venues");
-Object.defineProperty(exports, "ModelVenueDetail", { enumerable: true, get: function () { return sdk_venues_6.ModelVenueDetail; } });
-var sdk_venues_7 = require("@chalkysticks/sdk-venues");
-Object.defineProperty(exports, "ModelVenueMedia", { enumerable: true, get: function () { return sdk_venues_7.ModelVenueMedia; } });
-var sdk_venues_8 = require("@chalkysticks/sdk-venues");
-Object.defineProperty(exports, "ModelVenueMeta", { enumerable: true, get: function () { return sdk_venues_8.ModelVenueMeta; } });
-//# sourceMappingURL=index.js.map
+Object.defineProperty(exports, "ChalkySticks", { enumerable: true, get: function () { return __importDefault(sdk_core_1).default; } });
+exports.Collection = Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Core.Collection), Pad.Collection), Players.Collection), Tv.Collection), Venues.Collection), Wallet.Collection);
+exports.Model = Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, Core.Model), Authentication.Model), Pad.Model), Players.Model), Tv.Model), Venues.Model), Wallet.Model);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFJQSw2REFBK0M7QUFDL0MsaUZBQW1FO0FBQ25FLDJEQUE2QztBQUM3QyxtRUFBcUQ7QUFDckQseURBQTJDO0FBQzNDLGlFQUFtRDtBQUNuRCxpRUFBbUQ7QUFFbkQseURBQXVDO0FBRXZDLG1EQUFpRTtBQUF4RCx5SEFBQSxPQUFPLE9BQWdCO0FBRW5CLFFBQUEsVUFBVSwyRkFDbkIsSUFBSSxDQUFDLFVBQVUsR0FDZixHQUFHLENBQUMsVUFBVSxHQUNkLE9BQU8sQ0FBQyxVQUFVLEdBQ2xCLEVBQUUsQ0FBQyxVQUFVLEdBQ2IsTUFBTSxDQUFDLFVBQVUsR0FDakIsTUFBTSxDQUFDLFVBQVUsRUFDcEI7QUFFWSxRQUFBLEtBQUsseUdBQ2QsSUFBSSxDQUFDLEtBQUssR0FDVixjQUFjLENBQUMsS0FBSyxHQUNwQixHQUFHLENBQUMsS0FBSyxHQUNULE9BQU8sQ0FBQyxLQUFLLEdBQ2IsRUFBRSxDQUFDLEtBQUssR0FDUixNQUFNLENBQUMsS0FBSyxHQUNaLE1BQU0sQ0FBQyxLQUFLLEVBQ2YifQ==
