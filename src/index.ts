@@ -6,9 +6,12 @@ import * as Tv from '@chalkysticks/sdk-tv';
 import * as Venues from '@chalkysticks/sdk-venues';
 import * as Wallet from '@chalkysticks/sdk-wallet';
 
-export * from '@chalkysticks/sdk-core';
+// Exports
+// ---------------------------------------------------------------------------
 
 export { default as ChalkySticks } from '@chalkysticks/sdk-core';
+
+export * as Core from '@chalkysticks/sdk-core';
 
 export const Collection = {
 	...Core.Collection,
@@ -17,7 +20,7 @@ export const Collection = {
 	...Tv.Collection,
 	...Venues.Collection,
 	...Wallet.Collection,
-}
+};
 
 export const Model = {
 	...Core.Model,
@@ -27,4 +30,4 @@ export const Model = {
 	...Tv.Model,
 	...Venues.Model,
 	...Wallet.Model,
-}
+};

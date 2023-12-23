@@ -5,8 +5,9 @@ import * as Players from '@chalkysticks/sdk-players';
 import * as Tv from '@chalkysticks/sdk-tv';
 import * as Venues from '@chalkysticks/sdk-venues';
 import * as Wallet from '@chalkysticks/sdk-wallet';
-export * from '@chalkysticks/sdk-core';
 export { default as ChalkySticks } from '@chalkysticks/sdk-core';
+export * as Core from '@chalkysticks/sdk-core';
+export * as Authentication from '@chalkysticks/sdk-authentication';
 export declare const Collection: {
     Wallet: typeof Wallet.Collection.Wallet;
     Venue: typeof Venues.Collection.Venue;

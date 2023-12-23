@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { Collection, Constants, Enum, Environment, EventDispatcher, Exception, Model, Provider } from '../src/index';
 
 const model: Model.Player = new Model.Player({
-    id: 1,
+	id: 1,
 	name: 'Matt Kenefick',
 });
 
@@ -10,7 +10,7 @@ const model: Model.Player = new Model.Player({
  * Model Player Test
  */
 describe('ModelPlayer', () => {
-    it('should have a name', () => {
+	it('should have a name', () => {
 		console.log(Constants);
 		console.log(Exception);
 		console.log(Provider);
@@ -19,6 +19,6 @@ describe('ModelPlayer', () => {
 
 		const name = model.getName();
 
-        expect(name).to.equal('Matt Kenefick');
-    });
+		expect(name).to.equal('Matt Kenefick');
+	});
 });
