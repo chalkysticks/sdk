@@ -1,5 +1,12 @@
-import { expect } from 'chai';
-import { Collection, Constants, Enum, Environment, EventDispatcher, Exception, Model, Provider } from '../src/index';
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { Model } from '../src';
+import userModel from './data/user';
+
+test('hello', () => {
+	const message = 'Hello';
+	assert.equal(message, 'Hello', 'checking the greeting');
+});
 
 const model: Model.Player = new Model.Player({
 	id: 1,
@@ -9,16 +16,8 @@ const model: Model.Player = new Model.Player({
 /**
  * Model Player Test
  */
-describe('ModelPlayer', () => {
-	it('should have a name', () => {
-		console.log(Constants);
-		console.log(Exception);
-		console.log(Provider);
-		console.log(Environment);
-		console.log(EventDispatcher);
+test('ModelPlayer', () => {
+	const name = model.getName();
 
-		const name = model.getName();
-
-		expect(name).to.equal('Matt Kenefick');
-	});
+	assert.equal(name, 'Matt Kenefick', 'checking the name');
 });

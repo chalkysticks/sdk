@@ -1,33 +1,14 @@
 import * as Core from '@chalkysticks/sdk-core';
 import * as Authentication from '@chalkysticks/sdk-authentication';
-import * as Pad from '@chalkysticks/sdk-pad';
 import * as Players from '@chalkysticks/sdk-players';
-import * as Tv from '@chalkysticks/sdk-tv';
-import * as Venues from '@chalkysticks/sdk-venues';
-import * as Wallet from '@chalkysticks/sdk-wallet';
-export { default as ChalkySticks } from '@chalkysticks/sdk-core';
+export { ChalkySticks } from '@chalkysticks/sdk-core';
 export * as Core from '@chalkysticks/sdk-core';
-export * as Authentication from '@chalkysticks/sdk-authentication';
 export declare const Collection: {
-    Wallet: typeof Wallet.Collection.Wallet;
-    Venue: typeof Venues.Collection.Venue;
-    VenueDetail: typeof Venues.Collection.VenueDetail;
-    VenueMedia: typeof Venues.Collection.VenueMedia;
-    VenueMeta: typeof Venues.Collection.VenueMeta;
-    Schedule: typeof Tv.Collection.Schedule;
-    Diagram: typeof Pad.Collection.Diagram;
     Base: typeof Core.Collection.Base;
     User: typeof Core.Collection.User;
 };
 export declare const Model: {
-    Wallet: typeof Wallet.Model.Wallet;
-    Venue: typeof Venues.Model.Venue;
-    VenueDetail: typeof Venues.Model.VenueDetail;
-    VenueMedia: typeof Venues.Model.VenueMedia;
-    VenueMeta: typeof Venues.Model.VenueMeta;
-    Schedule: typeof Tv.Model.Schedule;
     Player: typeof Players.Model.Player;
-    Diagram: typeof Pad.Model.Diagram;
     User: typeof Core.Model.User;
     Authentication: typeof Authentication.Model.Authentication;
     Jwt: typeof Authentication.Model.Jwt;
