@@ -4,13 +4,13 @@
         "url": "https://github.com/chalkysticks/sdk/issues"
     },
     "dependencies": {
-        "@chalkysticks/sdk-authentication": "latest",
-        "@chalkysticks/sdk-core": "latest",
-        "@chalkysticks/sdk-pad": "latest",
-        "@chalkysticks/sdk-players": "latest",
-        "@chalkysticks/sdk-tv": "latest",
-        "@chalkysticks/sdk-venues": "latest",
-        "@chalkysticks/sdk-wallet": "latest"
+        "@chalkysticks/sdk-authentication": "github:chalkysticks/sdk-authentication",
+        "@chalkysticks/sdk-core": "github:chalkysticks/sdk-core",
+        "@chalkysticks/sdk-pad": "github:chalkysticks/sdk-pad",
+        "@chalkysticks/sdk-players": "github:chalkysticks/sdk-players",
+        "@chalkysticks/sdk-tv": "github:chalkysticks/sdk-tv",
+        "@chalkysticks/sdk-venues": "github:chalkysticks/sdk-venues",
+        "@chalkysticks/sdk-wallet": "github:chalkysticks/sdk-wallet"
     },
     "description": "ChalkySticks SDK core for web-based clients",
     "devDependencies": {
@@ -58,7 +58,7 @@
     },
     "type": "module",
     "types": "build/esm/index.d.ts",
-    "version": "1.4.1",
+    "version": "1.4.2",
     "workspaces": {
         "nohoist": [
             "**/sdk-authentication/@chalkysticks/mrm-preset",
