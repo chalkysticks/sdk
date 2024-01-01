@@ -1,0 +1,3 @@
+import { Collection as B } from '@chalkysticks/sdk-pad';
+export const Diagram = B.Diagram;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ29sbGVjdGlvbi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9Db2xsZWN0aW9uLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBLE9BQU8sRUFBRSxVQUFVLElBQUksQ0FBQyxFQUFFLE1BQU0sdUJBQXVCLENBQUM7QUFNeEQsTUFBTSxDQUFDLE1BQU0sT0FBTyxHQUFHLENBQUMsQ0FBQyxPQUFPLENBQUMifQ==
