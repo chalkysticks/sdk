@@ -19,13 +19,18 @@ export * as Wallet from '@chalkysticks/sdk-wallet';
 
 export { ChalkySticks } from '@chalkysticks/sdk-core';
 
-// Define a combined type that maintains the structure
-type CombinedCollectionsType = {
-	Pad: typeof Pad.Collection;
-	Venues: typeof Venues.Collection;
+export const Collection: any = {
+	...Pad.Collection,
+	...Tv.Collection,
+	...Venues.Collection,
+	...Wallet.Collection,
 };
 
-export const Collections: CombinedCollectionsType = {
-	Pad: Pad.Collection,
-	Venues: Venues.Collection,
+export const Model: any = {
+	...Authentication.Model,
+	...Core.Model,
+	...Pad.Model,
+	...Tv.Model,
+	...Venues.Model,
+	...Wallet.Model,
 };
