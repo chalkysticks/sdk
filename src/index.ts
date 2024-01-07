@@ -1,10 +1,10 @@
-// import * as Authentication from '@chalkysticks/sdk-authentication';
-// import * as Core from '@chalkysticks/sdk-core';
-// import * as Pad from '@chalkysticks/sdk-pad';
-// import * as Players from '@chalkysticks/sdk-players';
-// import * as Tv from '@chalkysticks/sdk-tv';
-// import * as Venues from '@chalkysticks/sdk-venues';
-// import * as Wallet from '@chalkysticks/sdk-wallet';
+import * as Authentication from '@chalkysticks/sdk-authentication';
+import * as Core from '@chalkysticks/sdk-core';
+import * as Pad from '@chalkysticks/sdk-pad';
+import * as Players from '@chalkysticks/sdk-players';
+import * as Tv from '@chalkysticks/sdk-tv';
+import * as Venues from '@chalkysticks/sdk-venues';
+import * as Wallet from '@chalkysticks/sdk-wallet';
 
 export * as Authentication from '@chalkysticks/sdk-authentication';
 export * as Core from '@chalkysticks/sdk-core';
@@ -18,3 +18,14 @@ export * as Wallet from '@chalkysticks/sdk-wallet';
 // ---------------------------------------------------------------------------
 
 export { ChalkySticks } from '@chalkysticks/sdk-core';
+
+// Define a combined type that maintains the structure
+type CombinedCollectionsType = {
+	Pad: typeof Pad.Collection;
+	Venues: typeof Venues.Collection;
+};
+
+export const Collections: CombinedCollectionsType = {
+	Pad: Pad.Collection,
+	Venues: Venues.Collection,
+};
