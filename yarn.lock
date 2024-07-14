@@ -30,7 +30,7 @@
 
 "@chalkysticks/mrm-preset@github:chalkysticks/mrm-preset":
   version "1.2.4"
-  resolved "https://codeload.github.com/chalkysticks/mrm-preset/tar.gz/14ba6f7bd4324435fec1db11bc861207f34065a0"
+  resolved "https://codeload.github.com/chalkysticks/mrm-preset/tar.gz/ffb5de89f32263360d52934953a34fd823f0e841"
 
 "@chalkysticks/sdk-authentication@github:chalkysticks/sdk-authentication":
   version "1.4.2"
