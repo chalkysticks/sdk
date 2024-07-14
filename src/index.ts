@@ -25,7 +25,7 @@ export const Model = {
 };
 
 // Export default namespace
-export default {
+const ChalkySticks = {
 	Authentication,
 	Collection,
 	Core,
@@ -36,3 +36,5 @@ export default {
 	Venues,
 	Wallet,
 };
+
+export default ChalkySticks;

@@ -28,7 +28,7 @@ export declare const Model: {
     Authentication: typeof Authentication.Model.Authentication;
     Jwt: typeof Authentication.Model.Jwt;
 };
-declare const _default: {
+declare const ChalkySticks: {
     Authentication: typeof Authentication;
     Collection: {
         Wallet: typeof Wallet.Collection.Wallet;
@@ -59,4 +59,4 @@ declare const _default: {
     Venues: typeof Venues;
     Wallet: typeof Wallet;
 };
-export default _default;
+export default ChalkySticks;
