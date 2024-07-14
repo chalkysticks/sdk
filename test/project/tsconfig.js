@@ -1,14 +1,19 @@
 {
 	"compilerOptions": {
-	  "target": "es6",
-	  "module": "commonjs",
-	  "strict": true,
-	  "esModuleInterop": true,
-	  "skipLibCheck": true,
-	  "baseUrl": ".",
-	  "paths": {
-		"@chalkysticks/sdk": ["../../build/esm/index.d.ts"]
-	  }
+		"baseUrl": ".",
+		"esModuleInterop": true,
+		"module": "commonjs",
+		"paths": {
+			"@chalkysticks/sdk": [
+				"../../build/esm/index.d.ts"
+			]
+		},
+		"rootDir": "src",
+		"skipLibCheck": true,
+		"strict": true,
+		"target": "es6"
 	},
-	"include": ["src"]
-  }
+	"include": [
+		"src"
+	]
+}

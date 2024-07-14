@@ -1,62 +1,39 @@
-import * as Authentication from '@chalkysticks/sdk-authentication';
-import * as Core from '@chalkysticks/sdk-core';
-import * as Pad from '@chalkysticks/sdk-pad';
-import * as Players from '@chalkysticks/sdk-players';
-import * as TV from '@chalkysticks/sdk-tv';
-import * as Venues from '@chalkysticks/sdk-venues';
-import * as Wallet from '@chalkysticks/sdk-wallet';
-export { Authentication, Core, Pad, Players, TV, Venues, Wallet };
-export declare const Collection: {
-    Wallet: typeof Wallet.Collection.Wallet;
-    Venue: typeof Venues.Collection.Venue;
-    VenueDetail: typeof Venues.Collection.VenueDetail;
-    VenueMedia: typeof Venues.Collection.VenueMedia;
-    VenueMeta: typeof Venues.Collection.VenueMeta;
-    Schedule: typeof TV.Collection.Schedule;
-    Diagram: typeof Pad.Collection.Diagram;
-};
-export declare const Model: {
-    Wallet: typeof Wallet.Model.Wallet;
-    Venue: typeof Venues.Model.Venue;
-    VenueDetail: typeof Venues.Model.VenueDetail;
-    VenueMedia: typeof Venues.Model.VenueMedia;
-    VenueMeta: typeof Venues.Model.VenueMeta;
-    Schedule: typeof TV.Model.Schedule;
-    Diagram: typeof Pad.Model.Diagram;
-    Base: typeof Authentication.Core.Model.Base;
-    User: typeof Authentication.Core.Model.User;
-    Authentication: typeof Authentication.Model.Authentication;
-    Jwt: typeof Authentication.Model.Jwt;
-};
-declare const ChalkySticks: {
-    Authentication: typeof Authentication;
-    Collection: {
-        Wallet: typeof Wallet.Collection.Wallet;
-        Venue: typeof Venues.Collection.Venue;
-        VenueDetail: typeof Venues.Collection.VenueDetail;
-        VenueMedia: typeof Venues.Collection.VenueMedia;
-        VenueMeta: typeof Venues.Collection.VenueMeta;
-        Schedule: typeof TV.Collection.Schedule;
-        Diagram: typeof Pad.Collection.Diagram;
-    };
-    Core: typeof Authentication.Core;
-    Model: {
-        Wallet: typeof Wallet.Model.Wallet;
-        Venue: typeof Venues.Model.Venue;
-        VenueDetail: typeof Venues.Model.VenueDetail;
-        VenueMedia: typeof Venues.Model.VenueMedia;
-        VenueMeta: typeof Venues.Model.VenueMeta;
-        Schedule: typeof TV.Model.Schedule;
-        Diagram: typeof Pad.Model.Diagram;
-        Base: typeof Authentication.Core.Model.Base;
-        User: typeof Authentication.Core.Model.User;
-        Authentication: typeof Authentication.Model.Authentication;
-        Jwt: typeof Authentication.Model.Jwt;
-    };
-    Pad: typeof Pad;
-    Players: typeof Players;
-    TV: typeof TV;
-    Venues: typeof Venues;
-    Wallet: typeof Wallet;
-};
+import * as AuthenticationModule from '@chalkysticks/sdk-authentication';
+import * as CoreModule from '@chalkysticks/sdk-core';
+import * as PadModule from '@chalkysticks/sdk-pad';
+import * as PlayersModule from '@chalkysticks/sdk-players';
+import * as TVModule from '@chalkysticks/sdk-tv';
+import * as VenuesModule from '@chalkysticks/sdk-venues';
+import * as WalletModule from '@chalkysticks/sdk-wallet';
+declare namespace ChalkySticks {
+    namespace Collection {
+        export import Wallet = WalletModule.Collection.Wallet;
+        export import Venue = VenuesModule.Collection.Venue;
+        export import VenueDetail = VenuesModule.Collection.VenueDetail;
+        export import VenueMedia = VenuesModule.Collection.VenueMedia;
+        export import VenueMeta = VenuesModule.Collection.VenueMeta;
+        export import Schedule = TVModule.Collection.Schedule;
+        export import Diagram = PadModule.Collection.Diagram;
+    }
+    namespace Model {
+        export import Wallet = WalletModule.Model.Wallet;
+        export import Venue = VenuesModule.Model.Venue;
+        export import VenueDetail = VenuesModule.Model.VenueDetail;
+        export import VenueMedia = VenuesModule.Model.VenueMedia;
+        export import VenueMeta = VenuesModule.Model.VenueMeta;
+        export import Schedule = TVModule.Model.Schedule;
+        export import Diagram = PadModule.Model.Diagram;
+        export import Base = AuthenticationModule.Core.Model.Base;
+        export import User = AuthenticationModule.Core.Model.User;
+        export import Authentication = AuthenticationModule.Model.Authentication;
+        export import Jwt = AuthenticationModule.Model.Jwt;
+    }
+    export import Authentication = AuthenticationModule;
+    export import Core = CoreModule;
+    export import Pad = PadModule;
+    export import Players = PlayersModule;
+    export import TV = TVModule;
+    export import Venues = VenuesModule;
+    export import Wallet = WalletModule;
+}
 export default ChalkySticks;
