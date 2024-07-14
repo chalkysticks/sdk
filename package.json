@@ -1,79 +1,79 @@
 {
-    "author": "ChalkySticks LLC",
-    "bugs": {
-        "url": "https://github.com/chalkysticks/sdk/issues"
-    },
-    "dependencies": {
-        "@chalkysticks/sdk-authentication": "github:chalkysticks/sdk-authentication",
-        "@chalkysticks/sdk-core": "github:chalkysticks/sdk-core",
-        "@chalkysticks/sdk-pad": "github:chalkysticks/sdk-pad#v2",
-        "@chalkysticks/sdk-players": "github:chalkysticks/sdk-players",
-        "@chalkysticks/sdk-tv": "github:chalkysticks/sdk-tv#v1",
-        "@chalkysticks/sdk-venues": "github:chalkysticks/sdk-venues#v1",
-        "@chalkysticks/sdk-wallet": "github:chalkysticks/sdk-wallet"
-    },
-    "description": "ChalkySticks SDK core for web-based clients",
-    "devDependencies": {
-        "@chalkysticks/mrm-preset": "github:chalkysticks/mrm-preset",
-        "@typescript-eslint/eslint-plugin": "^4.13.0",
-        "@typescript-eslint/parser": "^4.13.0",
-        "esbuild": "^0.19.11",
-        "eslint": "^7.17.0",
-        "tsx": "^4.7.0",
-        "typescript": "^5.2.2"
-    },
-    "exports": {
-        ".": {
-            "import": "./build/esm/index.js",
-            "require": "./build/cjs/index.cjs",
-            "types": "./build/esm/index.d.ts"
-        }
-    },
-    "files": [
-        "!**/*.spec.*",
-        "!**/*.json",
-        "build",
-        "CHANGELOG.md",
-        "LICENSE",
-        "README.md"
-    ],
-    "homepage": "https://www.chalkysticks.com",
-    "keywords": [
-        "billiards",
-        "chalkysticks",
-        "pool"
-    ],
-    "license": "GPL-3.0-or-later",
-    "main": "./build/esm/index.js",
-    "module": "./build/esm/index.js",
-    "name": "@chalkysticks/sdk",
-    "private": true,
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/chalkysticks/sdk.git"
-    },
-    "scripts": {
-        "build": "tsc -p tsconfig.json && yarn build:web && yarn build:cjs",
-        "build:cjs": "esbuild src/index.ts --bundle --minify --sourcemap --platform=node --format=cjs --outfile=build/cjs/index.cjs",
-        "build:packages": "find ./packages -type d -maxdepth 1 -mindepth 1 -exec sh -c 'cd \"{}\" && echo \"\n\n\n$PWD\" && yarn && yarn build' \\;",
-        "build:web": "esbuild src/index.ts --bundle --minify --sourcemap --target=chrome62 --format=esm --outfile=build/web/chalkysticks.js",
-        "test": "tsc --noEmit && node --import tsx --test test/*.spec.ts"
-    },
-    "type": "module",
-    "types": "build/esm/index.d.ts",
-    "version": "1.7.0",
-    "workspaces": {
-        "nohoist": [
-            "**/sdk-authentication/@chalkysticks/mrm-preset",
-            "**/sdk-core/@chalkysticks/mrm-preset",
-            "**/sdk-pad/@chalkysticks/mrm-preset",
-            "**/sdk-players/@chalkysticks/mrm-preset",
-            "**/sdk-tv/@chalkysticks/mrm-preset",
-            "**/sdk-venues/@chalkysticks/mrm-preset",
-            "**/sdk-wallet/@chalkysticks/mrm-preset"
-        ],
-        "packages": [
-            "packages/*"
-        ]
-    }
+	"author": "ChalkySticks LLC",
+	"bugs": {
+		"url": "https://github.com/chalkysticks/sdk/issues"
+	},
+	"dependencies": {
+		"@chalkysticks/sdk-authentication": "github:chalkysticks/sdk-authentication",
+		"@chalkysticks/sdk-core": "github:chalkysticks/sdk-core",
+		"@chalkysticks/sdk-pad": "github:chalkysticks/sdk-pad#v2",
+		"@chalkysticks/sdk-players": "github:chalkysticks/sdk-players",
+		"@chalkysticks/sdk-tv": "github:chalkysticks/sdk-tv#v1",
+		"@chalkysticks/sdk-venues": "github:chalkysticks/sdk-venues#v1",
+		"@chalkysticks/sdk-wallet": "github:chalkysticks/sdk-wallet"
+	},
+	"description": "ChalkySticks SDK core for web-based clients",
+	"devDependencies": {
+		"@chalkysticks/mrm-preset": "github:chalkysticks/mrm-preset",
+		"@typescript-eslint/eslint-plugin": "^4.13.0",
+		"@typescript-eslint/parser": "^4.13.0",
+		"esbuild": "^0.19.11",
+		"eslint": "^7.17.0",
+		"tsx": "^4.7.0",
+		"typescript": "^5.2.2"
+	},
+	"exports": {
+		".": {
+			"import": "./build/esm/index.js",
+			"require": "./build/cjs/index.cjs",
+			"types": "./build/esm/index.d.ts"
+		}
+	},
+	"files": [
+		"!**/*.spec.*",
+		"!**/*.json",
+		"build",
+		"CHANGELOG.md",
+		"LICENSE",
+		"README.md"
+	],
+	"homepage": "https://www.chalkysticks.com",
+	"keywords": [
+		"billiards",
+		"chalkysticks",
+		"pool"
+	],
+	"license": "GPL-3.0-or-later",
+	"main": "./build/cjs/index.js",
+	"module": "./build/esm/index.js",
+	"name": "@chalkysticks/sdk",
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/chalkysticks/sdk.git"
+	},
+	"scripts": {
+		"build": "tsc -p tsconfig.json && yarn build:web && yarn build:cjs",
+		"build:cjs": "esbuild src/index.ts --bundle --minify --sourcemap --platform=node --format=cjs --outfile=build/cjs/index.cjs",
+		"build:packages": "find ./packages -type d -maxdepth 1 -mindepth 1 -exec sh -c 'cd \"{}\" && echo \"\n\n\n$PWD\" && yarn && yarn build' \\;",
+		"build:web": "esbuild src/index.ts --bundle --minify --sourcemap --target=chrome62 --format=esm --outfile=build/web/chalkysticks.js",
+		"test": "tsc --noEmit && node --import tsx --test test/*.spec.ts"
+	},
+	"type": "module",
+	"types": "build/esm/index.d.ts",
+	"version": "1.7.0",
+	"workspaces": {
+		"nohoist": [
+			"**/sdk-authentication/@chalkysticks/mrm-preset",
+			"**/sdk-core/@chalkysticks/mrm-preset",
+			"**/sdk-pad/@chalkysticks/mrm-preset",
+			"**/sdk-players/@chalkysticks/mrm-preset",
+			"**/sdk-tv/@chalkysticks/mrm-preset",
+			"**/sdk-venues/@chalkysticks/mrm-preset",
+			"**/sdk-wallet/@chalkysticks/mrm-preset"
+		],
+		"packages": [
+			"packages/*"
+		]
+	}
 }
