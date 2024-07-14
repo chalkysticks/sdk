@@ -44,7 +44,7 @@
         "pool"
     ],
     "license": "GPL-3.0-or-later",
-    "main": "./build/cjs/index.js",
+    "main": "./build/esm/index.js",
     "module": "./build/esm/index.js",
     "name": "@chalkysticks/sdk",
     "private": true,
@@ -56,12 +56,12 @@
         "build": "tsc -p tsconfig.json && yarn build:web && yarn build:cjs",
         "build:cjs": "esbuild src/index.ts --bundle --minify --sourcemap --format=cjs --outfile=build/cjs/index.js",
         "build:packages": "find ./packages -type d -maxdepth 1 -mindepth 1 -exec sh -c 'cd \"{}\" && echo \"\n\n\n$PWD\" && yarn && yarn build' \\;",
-        "build:web": "esbuild src/index.ts --bundle --minify --sourcemap --format=esm --outfile=build/esm/index.js",
+        "build:web": "esbuild src/index.ts --bundle --minify --sourcemap --target=chrome62 --format=esm --outfile=build/web/chalkysticks.js",
         "test": "tsc --noEmit && node --import tsx --test test/*.spec.ts"
     },
     "type": "module",
     "types": "build/esm/index.d.ts",
-    "version": "1.6.1",
+    "version": "1.6.3",
     "workspaces": {
         "nohoist": [
             "**/sdk-authentication/@chalkysticks/mrm-preset",
