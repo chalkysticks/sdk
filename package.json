@@ -62,7 +62,7 @@
     },
     "type": "module",
     "types": "build/esm/index.d.ts",
-    "version": "1.8.1",
+    "version": "1.8.2",
     "workspaces": {
         "nohoist": [
             "**/sdk-authentication/@chalkysticks/mrm-preset",
