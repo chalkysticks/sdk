@@ -19,7 +19,7 @@ declare namespace ChalkySticks {
         export import Authentication = AuthenticationModule.Model.Authentication;
         export import Base = AuthenticationModule.Core.Model.Base;
         export import Diagram = PadModule.Model.Diagram;
-        export import Geocode = AuthenticationModule.Core.Model.Geocode;
+        export import Geocode = CoreModule.Model.Geocode;
         export import Jwt = AuthenticationModule.Model.Jwt;
         export import Schedule = TVModule.Model.Schedule;
         export import User = AuthenticationModule.Core.Model.User;
