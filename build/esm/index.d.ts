@@ -7,6 +7,7 @@ import * as VenuesModule from '@chalkysticks/sdk-venues';
 import * as WalletModule from '@chalkysticks/sdk-wallet';
 declare namespace ChalkySticks {
     namespace Collection {
+        export import Beacon = PlayersModule.Collection.Beacon;
         export import Diagram = PadModule.Collection.Diagram;
         export import Schedule = TVModule.Collection.Schedule;
         export import Venue = VenuesModule.Collection.Venue;
@@ -18,6 +19,7 @@ declare namespace ChalkySticks {
     namespace Model {
         export import Authentication = AuthenticationModule.Model.Authentication;
         export import Base = AuthenticationModule.Core.Model.Base;
+        export import Beacon = PlayersModule.Model.Beacon;
         export import Diagram = PadModule.Model.Diagram;
         export import Geocode = CoreModule.Model.Geocode;
         export import Jwt = AuthenticationModule.Model.Jwt;
