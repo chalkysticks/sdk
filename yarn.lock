@@ -33,15 +33,15 @@
   resolved "https://codeload.github.com/chalkysticks/mrm-preset/tar.gz/ffb5de89f32263360d52934953a34fd823f0e841"
 
 "@chalkysticks/sdk-authentication@github:chalkysticks/sdk-authentication":
-  version "1.5.0"
-  resolved "https://codeload.github.com/chalkysticks/sdk-authentication/tar.gz/94f3a00bcba5f203c4821310191ef0a9b2516699"
+  version "1.5.1"
+  resolved "https://codeload.github.com/chalkysticks/sdk-authentication/tar.gz/bd75cb13901255a7905710dc287ec031429f7ce4"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
 
 "@chalkysticks/sdk-core@github:chalkysticks/sdk-core":
-  version "1.9.0"
-  resolved "https://codeload.github.com/chalkysticks/sdk-core/tar.gz/2582dd8ca2bf2983e65595c32b8a4cff58304ac1"
+  version "1.9.1"
+  resolved "https://codeload.github.com/chalkysticks/sdk-core/tar.gz/454f42b80aedc8cfa8c1a6526b53315c33c5749d"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@types/googlemaps" "^3.43.3"
