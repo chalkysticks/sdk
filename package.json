@@ -58,11 +58,12 @@
         "build:packages": "find ./packages -type d -maxdepth 1 -mindepth 1 -exec sh -c 'cd \"{}\" && echo \"\n\n\n$PWD\" && yarn && yarn build' \\;",
         "build:web": "esbuild src/index.ts --bundle --minify --sourcemap --target=chrome62 --format=esm --outfile=build/web/chalkysticks.js",
         "test": "tsc --noEmit && node --import tsx --test test/*.spec.ts",
-        "test:project": "cd test/project && tsc -p ./tsconfig.js"
+        "test:project": "cd test/project && tsc -p ./tsconfig.js",
+        "upgrade:all": "yarn upgrade @chalkysticks/sdk-authentication @chalkysticks/sdk-core @chalkysticks/sdk-pad @chalkysticks/sdk-players @chalkysticks/sdk-tv @chalkysticks/sdk-venues @chalkysticks/sdk-wallet"
     },
     "type": "module",
     "types": "build/esm/index.d.ts",
-    "version": "1.10.0",
+    "version": "1.10.1",
     "workspaces": {
         "nohoist": [
             "**/sdk-authentication/@chalkysticks/mrm-preset",
