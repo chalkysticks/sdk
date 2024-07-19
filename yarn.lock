@@ -55,8 +55,8 @@
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
 
 "@chalkysticks/sdk-players@github:chalkysticks/sdk-players":
-  version "1.5.0"
-  resolved "https://codeload.github.com/chalkysticks/sdk-players/tar.gz/51587ca8e18012a1e11caa166eca45554fb0c972"
+  version "1.5.1"
+  resolved "https://codeload.github.com/chalkysticks/sdk-players/tar.gz/ec19601e29ee6b2e039cacc65fd622db017df231"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
