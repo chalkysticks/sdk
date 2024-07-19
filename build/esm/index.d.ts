@@ -7,26 +7,27 @@ import * as VenuesModule from '@chalkysticks/sdk-venues';
 import * as WalletModule from '@chalkysticks/sdk-wallet';
 declare namespace ChalkySticks {
     namespace Collection {
-        export import Wallet = WalletModule.Collection.Wallet;
+        export import Diagram = PadModule.Collection.Diagram;
+        export import Schedule = TVModule.Collection.Schedule;
         export import Venue = VenuesModule.Collection.Venue;
         export import VenueDetail = VenuesModule.Collection.VenueDetail;
         export import VenueMedia = VenuesModule.Collection.VenueMedia;
         export import VenueMeta = VenuesModule.Collection.VenueMeta;
-        export import Schedule = TVModule.Collection.Schedule;
-        export import Diagram = PadModule.Collection.Diagram;
+        export import Wallet = WalletModule.Collection.Wallet;
     }
     namespace Model {
-        export import Wallet = WalletModule.Model.Wallet;
+        export import Authentication = AuthenticationModule.Model.Authentication;
+        export import Base = AuthenticationModule.Core.Model.Base;
+        export import Diagram = PadModule.Model.Diagram;
+        export import Geocode = AuthenticationModule.Core.Model.Geocode;
+        export import Jwt = AuthenticationModule.Model.Jwt;
+        export import Schedule = TVModule.Model.Schedule;
+        export import User = AuthenticationModule.Core.Model.User;
         export import Venue = VenuesModule.Model.Venue;
         export import VenueDetail = VenuesModule.Model.VenueDetail;
         export import VenueMedia = VenuesModule.Model.VenueMedia;
         export import VenueMeta = VenuesModule.Model.VenueMeta;
-        export import Schedule = TVModule.Model.Schedule;
-        export import Diagram = PadModule.Model.Diagram;
-        export import Base = AuthenticationModule.Core.Model.Base;
-        export import User = AuthenticationModule.Core.Model.User;
-        export import Authentication = AuthenticationModule.Model.Authentication;
-        export import Jwt = AuthenticationModule.Model.Jwt;
+        export import Wallet = WalletModule.Model.Wallet;
     }
     export import Authentication = AuthenticationModule;
     export import Core = CoreModule;
