@@ -16,6 +16,9 @@ declare namespace ChalkySticks {
         export import VenueMeta = VenuesModule.Collection.VenueMeta;
         export import Wallet = WalletModule.Collection.Wallet;
     }
+    namespace Enum {
+        export import GameType = TVModule.Enum.GameType;
+    }
     namespace Model {
         export import Authentication = AuthenticationModule.Model.Authentication;
         export import Base = AuthenticationModule.Core.Model.Base;

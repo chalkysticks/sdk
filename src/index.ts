@@ -19,6 +19,10 @@ namespace ChalkySticks {
 		export import Wallet = WalletModule.Collection.Wallet;
 	}
 
+	export namespace Enum {
+		export import GameType = TVModule.Enum.GameType;
+	}
+
 	export namespace Model {
 		export import Authentication = AuthenticationModule.Model.Authentication;
 		export import Base = AuthenticationModule.Core.Model.Base;
