@@ -19,6 +19,9 @@ declare namespace ChalkySticks {
     namespace Enum {
         export import GameType = TVModule.Enum.GameType;
     }
+    namespace Factory {
+        export import Schedule = TVModule.Factory.Schedule;
+    }
     namespace Model {
         export import Authentication = AuthenticationModule.Model.Authentication;
         export import Base = AuthenticationModule.Core.Model.Base;

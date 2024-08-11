@@ -23,6 +23,10 @@ namespace ChalkySticks {
 		export import GameType = TVModule.Enum.GameType;
 	}
 
+	export namespace Factory {
+		export import Schedule = TVModule.Factory.Schedule;
+	}
+
 	export namespace Model {
 		export import Authentication = AuthenticationModule.Model.Authentication;
 		export import Base = AuthenticationModule.Core.Model.Base;
