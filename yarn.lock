@@ -41,22 +41,22 @@
 
 "@chalkysticks/sdk-core@github:chalkysticks/sdk-core":
   version "1.15.2"
-  resolved "https://codeload.github.com/chalkysticks/sdk-core/tar.gz/56afa22fbbc4126d39e0d6c5ea1399122ff0239c"
+  resolved "https://codeload.github.com/chalkysticks/sdk-core/tar.gz/9d3320784daf1eb7512fc940ae9ecc07d0e20a34"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@types/googlemaps" "^3.43.3"
     restmc "git+https://github.com/mattkenefick/restmc.git"
 
 "@chalkysticks/sdk-pad@github:chalkysticks/sdk-pad#v2":
-  version "1.2.1"
-  resolved "https://codeload.github.com/chalkysticks/sdk-pad/tar.gz/df3a1ad2a613855949e313960a2d3f187ffe33af"
+  version "1.2.2"
+  resolved "https://codeload.github.com/chalkysticks/sdk-pad/tar.gz/8e591dd41dcec07d07e3a9fad1058e50e913391a"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
 
 "@chalkysticks/sdk-players@github:chalkysticks/sdk-players":
-  version "1.5.2"
-  resolved "https://codeload.github.com/chalkysticks/sdk-players/tar.gz/19c46e80d11c749abe5ce775a6370dcbe0f06c6c"
+  version "1.5.3"
+  resolved "https://codeload.github.com/chalkysticks/sdk-players/tar.gz/61fec98b79079567660bdbd6cfa9339374ebc8ef"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
@@ -69,8 +69,8 @@
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
 
 "@chalkysticks/sdk-venues@github:chalkysticks/sdk-venues#v1":
-  version "1.2.1"
-  resolved "https://codeload.github.com/chalkysticks/sdk-venues/tar.gz/8bd22fbf8c1a4e82e98a36bb34d674b5c8eecfa2"
+  version "1.2.2"
+  resolved "https://codeload.github.com/chalkysticks/sdk-venues/tar.gz/dde199d55efa10ef6c0971f991b1736696e295af"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
@@ -266,9 +266,9 @@
     form-data "^4.0.0"
 
 "@types/node@*":
-  version "22.5.5"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.5.5.tgz#52f939dd0f65fc552a4ad0b392f3c466cc5d7a44"
-  integrity sha512-Xjs4y5UPO/CLdzpgR6GirZJx36yScjh73+2NlLlkFRSoQN8B0DpfXPdZGnvVmLRLOsqDpOfTNv7D9trgGhmOIA==
+  version "22.7.4"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.7.4.tgz#e35d6f48dca3255ce44256ddc05dee1c23353fcc"
+  integrity sha512-y+NPi1rFzDs1NdQHHToqeiX2TIS79SWEAw9GYhkkx8bD0ChpfqC+n2j5OXOCpzfojBEBt6DnEnnG9MY0zk1XLg==
   dependencies:
     undici-types "~6.19.2"
 

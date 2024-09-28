@@ -20,7 +20,11 @@ declare namespace ChalkySticks {
         export import GameType = TVModule.Enum.GameType;
     }
     namespace Factory {
+        export import Beacon = PlayersModule.Factory.Beacon;
+        export import Diagram = PadModule.Factory.Diagram;
+        export import Player = PlayersModule.Factory.Player;
         export import Schedule = TVModule.Factory.Schedule;
+        export import Venue = VenuesModule.Factory.Venue;
     }
     namespace Model {
         export import Authentication = AuthenticationModule.Model.Authentication;
