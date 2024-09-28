@@ -44,10 +44,14 @@ declare namespace ChalkySticks {
         export import Wallet = WalletModule.Model.Wallet;
     }
     export import Authentication = AuthenticationModule;
+    export import Constants = CoreModule.Constants;
     export import Core = CoreModule;
+    export import Environment = CoreModule.Environment;
+    export import Exception = CoreModule.Exception;
     export import Pad = PadModule;
     export import Players = PlayersModule;
     export import TV = TVModule;
+    export import Utility = CoreModule.Utility;
     export import Venues = VenuesModule;
     export import Wallet = WalletModule;
 }
