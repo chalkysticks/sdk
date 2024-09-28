@@ -62,8 +62,8 @@
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
 
 "@chalkysticks/sdk-tv@github:chalkysticks/sdk-tv#v1":
-  version "1.7.1"
-  resolved "https://codeload.github.com/chalkysticks/sdk-tv/tar.gz/ac5014596211d893c89ce1b8ef1d03a385a0a808"
+  version "1.7.2"
+  resolved "https://codeload.github.com/chalkysticks/sdk-tv/tar.gz/aba5bdcb92de3655130e47e331ffc227d651309a"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"

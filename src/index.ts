@@ -26,6 +26,7 @@ namespace ChalkySticks {
 	export namespace Factory {
 		export import Beacon = PlayersModule.Factory.Beacon;
 		export import Diagram = PadModule.Factory.Diagram;
+		export import Live = TVModule.Factory.Live;
 		export import Player = PlayersModule.Factory.Player;
 		export import Schedule = TVModule.Factory.Schedule;
 		export import Venue = VenuesModule.Factory.Venue;
