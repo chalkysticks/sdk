@@ -9,6 +9,7 @@ import * as WalletModule from '@chalkysticks/sdk-wallet';
 
 namespace ChalkySticks {
 	export namespace Collection {
+		export import Advertisement = CoreModule.Collection.Advertisement;
 		export import Beacon = PlayersModule.Collection.Beacon;
 		export import Diagram = PadModule.Collection.Diagram;
 		export import Schedule = TVModule.Collection.Schedule;
@@ -24,6 +25,7 @@ namespace ChalkySticks {
 	}
 
 	export namespace Factory {
+		export import Advertisement = CoreModule.Factory.Advertisement;
 		export import Authentication = AuthenticationModule.Factory.Authentication;
 		export import Beacon = PlayersModule.Factory.Beacon;
 		export import Diagram = PadModule.Factory.Diagram;
@@ -34,6 +36,7 @@ namespace ChalkySticks {
 	}
 
 	export namespace Model {
+		export import Advertisement = CoreModule.Model.Advertisement;
 		export import Authentication = AuthenticationModule.Model.Authentication;
 		export import Base = AuthenticationModule.Core.Model.Base;
 		export import Beacon = PlayersModule.Model.Beacon;
