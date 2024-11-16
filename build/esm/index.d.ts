@@ -25,6 +25,7 @@ declare namespace ChalkySticks {
         export import Authentication = AuthenticationModule.Factory.Authentication;
         export import Beacon = PlayersModule.Factory.Beacon;
         export import Diagram = PadModule.Factory.Diagram;
+        export import Geocode = CoreModule.Factory.Geocode;
         export import Live = TVModule.Factory.Live;
         export import Player = PlayersModule.Factory.Player;
         export import Schedule = TVModule.Factory.Schedule;
