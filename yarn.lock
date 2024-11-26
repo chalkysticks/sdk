@@ -33,52 +33,52 @@
   resolved "https://codeload.github.com/chalkysticks/mrm-preset/tar.gz/ffb5de89f32263360d52934953a34fd823f0e841"
 
 "@chalkysticks/sdk-authentication@github:chalkysticks/sdk-authentication":
-  version "1.5.3"
-  resolved "https://codeload.github.com/chalkysticks/sdk-authentication/tar.gz/81b2d3dbc0ae21b1603c842fab2426b8b2fa9677"
+  version "1.6.0"
+  resolved "https://codeload.github.com/chalkysticks/sdk-authentication/tar.gz/e9bbfead62bfb507f923cd75c84efd40826d2137"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
 
 "@chalkysticks/sdk-core@github:chalkysticks/sdk-core":
-  version "1.24.0"
-  resolved "https://codeload.github.com/chalkysticks/sdk-core/tar.gz/0c3685121922ff09a3ecfa69a29ff304076693c7"
+  version "1.25.0"
+  resolved "https://codeload.github.com/chalkysticks/sdk-core/tar.gz/1386a3995198b0a632d84ba41e694e25e3ef03bb"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@types/googlemaps" "^3.43.3"
     restmc "git+https://github.com/mattkenefick/restmc.git"
 
 "@chalkysticks/sdk-pad@github:chalkysticks/sdk-pad#v2":
-  version "1.2.3"
-  resolved "https://codeload.github.com/chalkysticks/sdk-pad/tar.gz/d24870e747b5bd478623f13aa942b9ccba71db27"
+  version "1.3.0"
+  resolved "https://codeload.github.com/chalkysticks/sdk-pad/tar.gz/557e006228c4b2dd0e0905112ce0969cb8645a9a"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
 
 "@chalkysticks/sdk-players@github:chalkysticks/sdk-players":
-  version "1.5.4"
-  resolved "https://codeload.github.com/chalkysticks/sdk-players/tar.gz/5fe6bae0c25ab31db3d73a9872f2454d1f306997"
+  version "1.6.0"
+  resolved "https://codeload.github.com/chalkysticks/sdk-players/tar.gz/031061d89d4eaae6f1202c39a998ed38e5612072"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
 
 "@chalkysticks/sdk-tv@github:chalkysticks/sdk-tv#v1":
-  version "1.8.1"
-  resolved "https://codeload.github.com/chalkysticks/sdk-tv/tar.gz/b1ad4f03bfca50322a23bc8217f967a0837393c1"
+  version "1.9.0"
+  resolved "https://codeload.github.com/chalkysticks/sdk-tv/tar.gz/4dc051ffdba1d35aab216146e452b7bdc4aaa753"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
 
 "@chalkysticks/sdk-venues@github:chalkysticks/sdk-venues#v1":
-  version "1.3.2"
-  resolved "https://codeload.github.com/chalkysticks/sdk-venues/tar.gz/36f8e73130575c1ac1f40418acfeec4bfcd20b36"
+  version "1.4.0"
+  resolved "https://codeload.github.com/chalkysticks/sdk-venues/tar.gz/268ce6c04d2a65fe5142b09eda7e984c035ec882"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
     luxon "^3.5.0"
 
 "@chalkysticks/sdk-wallet@github:chalkysticks/sdk-wallet":
-  version "1.2.1"
-  resolved "https://codeload.github.com/chalkysticks/sdk-wallet/tar.gz/8ffbe2f8370645cd59d51b66cc42815b650da745"
+  version "1.3.0"
+  resolved "https://codeload.github.com/chalkysticks/sdk-wallet/tar.gz/c47e13afe9181f44f0d798c2211ab94161e366e0"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
@@ -267,11 +267,11 @@
     form-data "^4.0.0"
 
 "@types/node@*":
-  version "22.9.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.9.1.tgz#bdf91c36e0e7ecfb7257b2d75bf1b206b308ca71"
-  integrity sha512-p8Yy/8sw1caA8CdRIQBG5tiLHmxtQKObCijiAa9Ez+d4+PRffM4054xbju0msf+cvhJpnFEeNjxmVT/0ipktrg==
+  version "22.10.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.10.0.tgz#89bfc9e82496b9c7edea3382583fa94f75896e81"
+  integrity sha512-XC70cRZVElFHfIUB40FgZOBbgJYFKKMa5nb9lxcwYstFG/Mi+/Y0bGS+rs6Dmhmkpq4pnNiLiuZAbc02YCOnmA==
   dependencies:
-    undici-types "~6.19.8"
+    undici-types "~6.20.0"
 
 "@typescript-eslint/eslint-plugin@^4.13.0":
   version "4.33.0"
@@ -1304,10 +1304,10 @@ typescript@^5.2.2:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.3.3.tgz#b3ce6ba258e72e6305ba66f5c9b452aaee3ffe37"
   integrity sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==
 
-undici-types@~6.19.8:
-  version "6.19.8"
-  resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-6.19.8.tgz#35111c9d1437ab83a7cdc0abae2f26d88eda0a02"
-  integrity sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==
+undici-types@~6.20.0:
+  version "6.20.0"
+  resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-6.20.0.tgz#8171bf22c1f588d1554d55bf204bc624af388433"
+  integrity sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==
 
 uri-js@^4.2.2:
   version "4.4.1"
