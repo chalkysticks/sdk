@@ -29,6 +29,9 @@
             "types": "./build/esm/index.d.ts"
         }
     },
+    "external": [
+        "@capacitor/geolocation"
+    ],
     "files": [
         "!**/*.spec.*",
         "!**/*.json",
@@ -47,6 +50,13 @@
     "main": "./build/cjs/index.js",
     "module": "./build/esm/index.js",
     "name": "@chalkysticks/sdk",
+    "optionalDependencies": {
+        "@capacitor/geolocation": "^5.0.0"
+    },
+    "peerDependencies": {
+        "@capacitor/core": "^5.0.0",
+        "@capacitor/geolocation": "^5.0.0"
+    },
     "private": true,
     "repository": {
         "type": "git",
@@ -54,16 +64,16 @@
     },
     "scripts": {
         "build": "tsc -p tsconfig.json && yarn build:web && yarn build:cjs",
-        "build:cjs": "esbuild src/index.ts --bundle --minify --sourcemap --platform=node --format=cjs --outfile=build/cjs/index.cjs",
+        "build:cjs": "esbuild src/index.ts --bundle --minify --sourcemap --platform=node --format=cjs --external:@capacitor/geolocation --external:@capacitor/core --outfile=build/cjs/index.cjs",
         "build:packages": "find ./packages -type d -maxdepth 1 -mindepth 1 -exec sh -c 'cd \"{}\" && echo \"\n\n\n$PWD\" && yarn && yarn build' \\;",
-        "build:web": "esbuild src/index.ts --bundle --minify --sourcemap --target=chrome62 --format=esm --outfile=build/web/chalkysticks.js",
+        "build:web": "esbuild src/index.ts --bundle --minify --sourcemap --target=chrome62 --format=esm --external:@capacitor/geolocation --external:@capacitor/core --outfile=build/web/chalkysticks.js",
         "test": "tsc --noEmit && node --import tsx --test test/*.spec.ts",
         "test:project": "cd test/project && tsc -p ./tsconfig.js",
         "upgrade:all": "yarn upgrade @chalkysticks/sdk-authentication @chalkysticks/sdk-core @chalkysticks/sdk-pad @chalkysticks/sdk-players @chalkysticks/sdk-tv @chalkysticks/sdk-venues @chalkysticks/sdk-wallet"
     },
     "type": "module",
     "types": "build/esm/index.d.ts",
-    "version": "1.26.1",
+    "version": "1.27.0",
     "workspaces": {
         "nohoist": [
             "**/sdk-authentication/@chalkysticks/mrm-preset",
