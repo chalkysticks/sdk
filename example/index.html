@@ -31,6 +31,12 @@
 			import ChalkySticks from '../build/web/chalkysticks.js';
 
 			console.log('ChalkySticks', ChalkySticks);
+
+			const venueCollection = ChalkySticks.Factory.Venue.collection({
+				limit: 128,
+			});
+
+			venueCollection.fetch();
 		</script>
 	</body>
 </html>
