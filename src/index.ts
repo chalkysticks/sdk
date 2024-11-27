@@ -12,11 +12,12 @@ namespace ChalkySticks {
 		export import Advertisement = CoreModule.Collection.Advertisement;
 		export import Beacon = PlayersModule.Collection.Beacon;
 		export import Diagram = PadModule.Collection.Diagram;
+		export import Media = CoreModule.Collection.Media;
+		export import Meta = CoreModule.Collection.Meta;
 		export import Schedule = TVModule.Collection.Schedule;
 		export import Venue = VenuesModule.Collection.Venue;
 		export import VenueDetail = VenuesModule.Collection.VenueDetail;
-		export import VenueMedia = VenuesModule.Collection.VenueMedia;
-		export import VenueMeta = VenuesModule.Collection.VenueMeta;
+		export import VenueHour = VenuesModule.Collection.VenueHour;
 		export import Wallet = WalletModule.Collection.Wallet;
 	}
 
@@ -44,12 +45,13 @@ namespace ChalkySticks {
 		export import Diagram = PadModule.Model.Diagram;
 		export import Geocode = CoreModule.Model.Geocode;
 		export import Jwt = AuthenticationModule.Model.Jwt;
+		export import Media = CoreModule.Model.Media;
+		export import Meta = CoreModule.Model.Meta;
 		export import Schedule = TVModule.Model.Schedule;
 		export import User = AuthenticationModule.Core.Model.User;
 		export import Venue = VenuesModule.Model.Venue;
 		export import VenueDetail = VenuesModule.Model.VenueDetail;
-		export import VenueMedia = VenuesModule.Model.VenueMedia;
-		export import VenueMeta = VenuesModule.Model.VenueMeta;
+		export import VenueHour = VenuesModule.Model.VenueHour;
 		export import Wallet = WalletModule.Model.Wallet;
 	}
 
