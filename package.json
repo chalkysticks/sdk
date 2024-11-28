@@ -10,11 +10,13 @@
         "@chalkysticks/sdk-players": "github:chalkysticks/sdk-players",
         "@chalkysticks/sdk-tv": "github:chalkysticks/sdk-tv#v1",
         "@chalkysticks/sdk-venues": "github:chalkysticks/sdk-venues#v1",
-        "@chalkysticks/sdk-wallet": "github:chalkysticks/sdk-wallet"
+        "@chalkysticks/sdk-wallet": "github:chalkysticks/sdk-wallet",
+        "luxon": "^3.5.0"
     },
     "description": "ChalkySticks SDK core for web-based clients",
     "devDependencies": {
         "@chalkysticks/mrm-preset": "github:chalkysticks/mrm-preset",
+        "@types/luxon": "^3.4.2",
         "@typescript-eslint/eslint-plugin": "^4.13.0",
         "@typescript-eslint/parser": "^4.13.0",
         "esbuild": "^0.19.11",
@@ -66,7 +68,7 @@
     },
     "type": "module",
     "types": "build/esm/index.d.ts",
-    "version": "1.29.1",
+    "version": "1.29.2",
     "workspaces": {
         "nohoist": [
             "**/sdk-authentication/@chalkysticks/mrm-preset",
