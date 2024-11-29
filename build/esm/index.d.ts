@@ -30,6 +30,7 @@ declare namespace ChalkySticks {
         export import Live = TVModule.Factory.Live;
         export import Player = PlayersModule.Factory.Player;
         export import Schedule = TVModule.Factory.Schedule;
+        export import User = CoreModule.Factory.User;
         export import Venue = VenuesModule.Factory.Venue;
     }
     namespace Model {
