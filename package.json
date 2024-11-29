@@ -10,7 +10,6 @@
         "@chalkysticks/sdk-players": "github:chalkysticks/sdk-players",
         "@chalkysticks/sdk-tv": "github:chalkysticks/sdk-tv#v1",
         "@chalkysticks/sdk-venues": "github:chalkysticks/sdk-venues#v1",
-        "@chalkysticks/sdk-wallet": "github:chalkysticks/sdk-wallet",
         "luxon": "^3.5.0"
     },
     "description": "ChalkySticks SDK core for web-based clients",
@@ -64,11 +63,11 @@
         "build:web": "esbuild src/index.ts --bundle --minify --sourcemap --target=chrome62 --format=esm --external:@capacitor/geolocation --external:@capacitor/core --outfile=build/web/chalkysticks.js",
         "test": "tsc --noEmit && node --import tsx --test test/*.spec.ts",
         "test:project": "cd test/project && tsc -p ./tsconfig.js",
-        "upgrade:all": "yarn upgrade @chalkysticks/sdk-authentication @chalkysticks/sdk-core @chalkysticks/sdk-pad @chalkysticks/sdk-players @chalkysticks/sdk-tv @chalkysticks/sdk-venues @chalkysticks/sdk-wallet"
+        "upgrade:all": "yarn upgrade @chalkysticks/sdk-authentication @chalkysticks/sdk-core @chalkysticks/sdk-pad @chalkysticks/sdk-players @chalkysticks/sdk-tv @chalkysticks/sdk-venues"
     },
     "type": "module",
     "types": "build/esm/index.d.ts",
-    "version": "1.29.4",
+    "version": "1.30.0",
     "workspaces": {
         "nohoist": [
             "**/sdk-authentication/@chalkysticks/mrm-preset",
@@ -76,8 +75,7 @@
             "**/sdk-pad/@chalkysticks/mrm-preset",
             "**/sdk-players/@chalkysticks/mrm-preset",
             "**/sdk-tv/@chalkysticks/mrm-preset",
-            "**/sdk-venues/@chalkysticks/mrm-preset",
-            "**/sdk-wallet/@chalkysticks/mrm-preset"
+            "**/sdk-venues/@chalkysticks/mrm-preset"
         ],
         "packages": [
             "packages/*"
