@@ -4,7 +4,6 @@ import * as PadModule from '@chalkysticks/sdk-pad';
 import * as PlayersModule from '@chalkysticks/sdk-players';
 import * as TVModule from '@chalkysticks/sdk-tv';
 import * as VenuesModule from '@chalkysticks/sdk-venues';
-import * as WalletModule from '@chalkysticks/sdk-wallet';
 declare namespace ChalkySticks {
     namespace Collection {
         export import Advertisement = CoreModule.Collection.Advertisement;
@@ -16,7 +15,7 @@ declare namespace ChalkySticks {
         export import Venue = VenuesModule.Collection.Venue;
         export import VenueDetail = VenuesModule.Collection.VenueDetail;
         export import VenueHour = VenuesModule.Collection.VenueHour;
-        export import Wallet = WalletModule.Collection.Wallet;
+        export import Wallet = CoreModule.Collection.Wallet;
     }
     namespace Enum {
         export import GameType = TVModule.Enum.GameType;
@@ -48,7 +47,7 @@ declare namespace ChalkySticks {
         export import Venue = VenuesModule.Model.Venue;
         export import VenueDetail = VenuesModule.Model.VenueDetail;
         export import VenueHour = VenuesModule.Model.VenueHour;
-        export import Wallet = WalletModule.Model.Wallet;
+        export import Wallet = CoreModule.Model.Wallet;
     }
     export import Authentication = AuthenticationModule;
     export import Constants = CoreModule.Constants;
@@ -60,6 +59,5 @@ declare namespace ChalkySticks {
     export import TV = TVModule;
     export import Utility = CoreModule.Utility;
     export import Venues = VenuesModule;
-    export import Wallet = WalletModule;
 }
 export default ChalkySticks;
