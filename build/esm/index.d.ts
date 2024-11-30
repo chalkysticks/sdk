@@ -31,6 +31,7 @@ declare namespace ChalkySticks {
         export import Schedule = TVModule.Factory.Schedule;
         export import User = CoreModule.Factory.User;
         export import Venue = VenuesModule.Factory.Venue;
+        export import Wallet = CoreModule.Factory.Wallet;
     }
     namespace Model {
         export import Advertisement = CoreModule.Model.Advertisement;
