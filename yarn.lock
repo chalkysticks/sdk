@@ -33,8 +33,8 @@
   resolved "https://codeload.github.com/chalkysticks/mrm-preset/tar.gz/ffb5de89f32263360d52934953a34fd823f0e841"
 
 "@chalkysticks/sdk-authentication@github:chalkysticks/sdk-authentication":
-  version "1.7.0"
-  resolved "https://codeload.github.com/chalkysticks/sdk-authentication/tar.gz/fe6b728a660d7fa3c7ef22333745b159d86a828d"
+  version "1.7.1"
+  resolved "https://codeload.github.com/chalkysticks/sdk-authentication/tar.gz/a28b8269f6888e5d186da6e978565db35c5d3f2e"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
