@@ -13,6 +13,8 @@ namespace ChalkySticks {
 		export import Diagram = PadModule.Collection.Diagram;
 		export import Media = CoreModule.Collection.Media;
 		export import Meta = CoreModule.Collection.Meta;
+		export import Player = PlayersModule.Collection.Player;
+		export import Rulebook = CoreModule.Collection.Rulebook;
 		export import Schedule = TVModule.Collection.Schedule;
 		export import Venue = VenuesModule.Collection.Venue;
 		export import VenueDetail = VenuesModule.Collection.VenueDetail;
@@ -32,6 +34,7 @@ namespace ChalkySticks {
 		export import Geocode = CoreModule.Factory.Geocode;
 		export import Live = TVModule.Factory.Live;
 		export import Player = PlayersModule.Factory.Player;
+		export import Rulebook = CoreModule.Factory.Rulebook;
 		export import Schedule = TVModule.Factory.Schedule;
 		export import User = CoreModule.Factory.User;
 		export import Venue = VenuesModule.Factory.Venue;
@@ -48,6 +51,8 @@ namespace ChalkySticks {
 		export import Jwt = AuthenticationModule.Model.Jwt;
 		export import Media = CoreModule.Model.Media;
 		export import Meta = CoreModule.Model.Meta;
+		export import Player = PlayersModule.Model.Player;
+		export import Rulebook = CoreModule.Model.Rulebook;
 		export import Schedule = TVModule.Model.Schedule;
 		export import User = AuthenticationModule.Core.Model.User;
 		export import Venue = VenuesModule.Model.Venue;
