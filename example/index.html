@@ -23,7 +23,7 @@
 		<script>
 			window.env = {
 				app: {
-					api_url: 'http://localhost:7202',
+					api_url: 'http://localhost:8000/v3',
 				},
 			};
 		</script>
@@ -37,6 +37,17 @@
 			});
 
 			venueCollection.fetch();
+
+			// -----------------------------------------------------------------
+
+			// const venueMediaCollection = ChalkySticks.Factory.VenueMedia.collection();
+			const venueMediaCollection = new ChalkySticks.Collection.VenueMedia();
+
+			venueMediaCollection
+				.table()
+				.random()
+				.fetch()
+				.then(() => console.log('Media', venueMediaCollection));
 		</script>
 	</body>
 </html>
