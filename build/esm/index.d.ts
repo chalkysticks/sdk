@@ -9,6 +9,7 @@ declare namespace ChalkySticks {
     namespace Collection {
         export import Advertisement = CoreModule.Collection.Advertisement;
         export import Beacon = PlayersModule.Collection.Beacon;
+        export import Content = CoreModule.Collection.Content;
         export import Diagram = PadModule.Collection.Diagram;
         export import Media = CoreModule.Collection.Media;
         export import Meta = CoreModule.Collection.Meta;
@@ -25,6 +26,8 @@ declare namespace ChalkySticks {
     }
     namespace Enum {
         export import Achievement = CoreModule.Enum.Achievement;
+        export import ContentMediaType = CoreModule.Enum.ContentMediaType;
+        export import ContentType = CoreModule.Enum.ContentType;
         export import Currency = CoreModule.Enum.Currency;
         export import GameType = TVModule.Enum.GameType;
         export import MediaGroup = CoreModule.Enum.MediaGroup;
@@ -36,6 +39,7 @@ declare namespace ChalkySticks {
         export import Advertisement = CoreModule.Factory.Advertisement;
         export import Authentication = AuthenticationModule.Factory.Authentication;
         export import Beacon = PlayersModule.Factory.Beacon;
+        export import Content = CoreModule.Factory.Content;
         export import Diagram = PadModule.Factory.Diagram;
         export import Geocode = CoreModule.Factory.Geocode;
         export import Live = TVModule.Factory.Live;
@@ -54,6 +58,7 @@ declare namespace ChalkySticks {
         export import Authentication = AuthenticationModule.Model.Authentication;
         export import Base = AuthenticationModule.Core.Model.Base;
         export import Beacon = PlayersModule.Model.Beacon;
+        export import Content = CoreModule.Model.Content;
         export import Diagram = PadModule.Model.Diagram;
         export import Geocode = CoreModule.Model.Geocode;
         export import Jwt = AuthenticationModule.Model.Jwt;
