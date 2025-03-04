@@ -17,6 +17,7 @@ declare namespace ChalkySticks {
         export import Rulebook = CoreModule.Collection.Rulebook;
         export import Schedule = TVModule.Collection.Schedule;
         export import Statistic = CoreModule.Collection.Statistic;
+        export import User = CoreModule.Collection.User;
         export import UserMedia = MediaModule.Collection.UserMedia;
         export import Venue = VenuesModule.Collection.Venue;
         export import VenueDetail = VenuesModule.Collection.VenueDetail;
