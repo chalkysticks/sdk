@@ -40,8 +40,8 @@
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
 
 "@chalkysticks/sdk-core@github:chalkysticks/sdk-core":
-  version "1.31.18"
-  resolved "https://codeload.github.com/chalkysticks/sdk-core/tar.gz/559e5c3c4f0a7339590a296a5b349b2e00bc2512"
+  version "1.31.19"
+  resolved "https://codeload.github.com/chalkysticks/sdk-core/tar.gz/6285ce95ffdf0a09d46d39319ec69893c132cf9c"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@types/googlemaps" "^3.43.3"
@@ -1246,8 +1246,8 @@ resolve-pkg-maps@^1.0.0:
   integrity sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==
 
 "restmc@git+https://github.com/mattkenefick/restmc.git":
-  version "0.18.1"
-  resolved "git+https://github.com/mattkenefick/restmc.git#8fd406aca725de1742dff9743b01041ff87a8c5a"
+  version "1.0.0"
+  resolved "git+https://github.com/mattkenefick/restmc.git#e51d8c3da45644bbb78d2cbecba769cb0389b905"
   dependencies:
     "@types/node-fetch" "^2.5.7"
     axios "^0.21.4"
