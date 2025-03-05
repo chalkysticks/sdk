@@ -36,7 +36,15 @@
 				limit: 128,
 			});
 
+			// venueCollection.getBaseUrl = function () {
+			// 	return 'https://example.com';
+			// 	return this.baseUrl;
+			// };
+
+			venueCollection.baseUrl = 'https://example.com';
 			venueCollection.fetch();
+
+			console.log('Example', venueCollection.restmc);
 
 			// -----------------------------------------------------------------
 
