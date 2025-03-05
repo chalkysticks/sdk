@@ -21,9 +21,10 @@
 
 		<!-- Script -->
 		<script>
-			window.env = {
+			window.chalky = {
 				app: {
-					api_url: 'http://localhost:8000/v3',
+					// apiUrl: 'http://localhost:8000/v3',
+					localUrl: 'http://localhost:8000/v3',
 				},
 			};
 		</script>
@@ -41,10 +42,9 @@
 			// 	return this.baseUrl;
 			// };
 
-			venueCollection.baseUrl = 'https://example.com';
 			venueCollection.fetch();
 
-			console.log('Example', venueCollection.restmc);
+			console.log('Venue Collection', venueCollection.getBaseUrl());
 
 			// -----------------------------------------------------------------
 
@@ -56,6 +56,8 @@
 				.random()
 				.fetch()
 				.then(() => console.log('Media', venueMediaCollection));
+
+			console.log('Venuue Media Collection', venueMediaCollection.getBaseUrl());
 		</script>
 	</body>
 </html>
