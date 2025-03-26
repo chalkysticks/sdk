@@ -1247,8 +1247,8 @@ resolve-pkg-maps@^1.0.0:
   integrity sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==
 
 "restmc@git+https://github.com/mattkenefick/restmc.git":
-  version "1.3.4"
-  resolved "git+https://github.com/mattkenefick/restmc.git#7dd98f973a21e3f5daff325ce25acb813b975833"
+  version "1.3.5"
+  resolved "git+https://github.com/mattkenefick/restmc.git#1b1e8d7b063a1858e35105338ac546db677de8f1"
   dependencies:
     "@types/node-fetch" "^2.5.7"
     axios "^0.21.4"
