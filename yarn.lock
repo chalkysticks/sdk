@@ -40,8 +40,8 @@
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
 
 "@chalkysticks/sdk-core@github:chalkysticks/sdk-core":
-  version "1.32.6"
-  resolved "https://codeload.github.com/chalkysticks/sdk-core/tar.gz/8aa6cb40cd00287f53ac80337225137381550707"
+  version "1.32.7"
+  resolved "https://codeload.github.com/chalkysticks/sdk-core/tar.gz/3ae8ae73e42dcfa8339f14718ec8135de6f77d5b"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@types/googlemaps" "^3.43.3"
@@ -78,12 +78,13 @@
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
 
 "@chalkysticks/sdk-venues@github:chalkysticks/sdk-venues#v1":
-  version "1.5.6"
-  resolved "https://codeload.github.com/chalkysticks/sdk-venues/tar.gz/3659bf3929118964823fa34b074583900cf9c34f"
+  version "1.6.0"
+  resolved "https://codeload.github.com/chalkysticks/sdk-venues/tar.gz/7c94113bc8cc8309cd9155fd1efc16bf68156501"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
     luxon "^3.5.0"
+    reflect-metadata "^0.2.2"
     restmc "git+https://github.com/mattkenefick/restmc.git"
 
 "@esbuild/aix-ppc64@0.19.11":
@@ -1225,6 +1226,11 @@ queue-microtask@^1.2.2:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
+
+reflect-metadata@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/reflect-metadata/-/reflect-metadata-0.2.2.tgz#400c845b6cba87a21f2c65c4aeb158f4fa4d9c5b"
+  integrity sha512-urBwgfrvVP/eAyXx4hluJivBKzuEbSQs9rKWCrCkbSxNv8mxPcUZKeuoF3Uy4mJl3Lwprp6yy5/39VWigZ4K6Q==
 
 regexpp@^3.1.0:
   version "3.2.0"
