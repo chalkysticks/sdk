@@ -40,8 +40,8 @@
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
 
 "@chalkysticks/sdk-core@github:chalkysticks/sdk-core":
-  version "1.32.8"
-  resolved "https://codeload.github.com/chalkysticks/sdk-core/tar.gz/d115e6fa405996a34564a41b91c5f8d58ac43c02"
+  version "1.32.9"
+  resolved "https://codeload.github.com/chalkysticks/sdk-core/tar.gz/efa1e7dae6cd9f965279ee0831107d609a024580"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@types/googlemaps" "^3.43.3"
@@ -276,9 +276,9 @@
     form-data "^4.0.0"
 
 "@types/node@*":
-  version "22.13.13"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.13.13.tgz#5e7d110fb509b0d4a43fbf48fa9d6e0f83e1b1e7"
-  integrity sha512-ClsL5nMwKaBRwPcCvH8E7+nU4GxHVx1axNvMZTFHMEfNI7oahimt26P5zjVCRrjiIWj6YFXfE1v3dEp94wLcGQ==
+  version "22.13.14"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.13.14.tgz#70d84ec91013dcd2ba2de35532a5a14c2b4cc912"
+  integrity sha512-Zs/Ollc1SJ8nKUAgc7ivOEdIBM8JAKgrqqUYi2J997JuKO7/tpQC+WCetQ1sypiKCQWHdvdg9wBNpUPEWZae7w==
   dependencies:
     undici-types "~6.20.0"
 
@@ -1253,8 +1253,8 @@ resolve-pkg-maps@^1.0.0:
   integrity sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==
 
 "restmc@git+https://github.com/mattkenefick/restmc.git":
-  version "1.3.5"
-  resolved "git+https://github.com/mattkenefick/restmc.git#1b1e8d7b063a1858e35105338ac546db677de8f1"
+  version "1.3.6"
+  resolved "git+https://github.com/mattkenefick/restmc.git#42dff27d827da11219214254c3e69f69629f853e"
   dependencies:
     "@types/node-fetch" "^2.5.7"
     axios "^0.21.4"
