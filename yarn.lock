@@ -40,8 +40,8 @@
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
 
 "@chalkysticks/sdk-core@github:chalkysticks/sdk-core":
-  version "1.32.9"
-  resolved "https://codeload.github.com/chalkysticks/sdk-core/tar.gz/efa1e7dae6cd9f965279ee0831107d609a024580"
+  version "1.32.10"
+  resolved "https://codeload.github.com/chalkysticks/sdk-core/tar.gz/7daf25461b563f92023727e89b39bdb240388ba1"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@types/googlemaps" "^3.43.3"
@@ -78,8 +78,8 @@
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
 
 "@chalkysticks/sdk-venues@github:chalkysticks/sdk-venues#v1":
-  version "1.6.1"
-  resolved "https://codeload.github.com/chalkysticks/sdk-venues/tar.gz/1a87af74212850ce848968e9c91d1d22a7665b92"
+  version "1.6.2"
+  resolved "https://codeload.github.com/chalkysticks/sdk-venues/tar.gz/5b0864ff251b958f4a21fcaca2b0149d588df69e"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
