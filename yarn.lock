@@ -40,8 +40,8 @@
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
 
 "@chalkysticks/sdk-core@github:chalkysticks/sdk-core":
-  version "1.32.10"
-  resolved "https://codeload.github.com/chalkysticks/sdk-core/tar.gz/7daf25461b563f92023727e89b39bdb240388ba1"
+  version "1.33.0"
+  resolved "https://codeload.github.com/chalkysticks/sdk-core/tar.gz/b4824adb1212f59202610ce97240428d0366cc29"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@types/googlemaps" "^3.43.3"
