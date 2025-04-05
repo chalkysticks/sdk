@@ -10,6 +10,7 @@ declare namespace ChalkySticks {
         export import Advertisement = CoreModule.Collection.Advertisement;
         export import Beacon = PlayersModule.Collection.Beacon;
         export import Content = CoreModule.Collection.Content;
+        export import ContentTag = CoreModule.Collection.ContentTag;
         export import Diagram = PadModule.Collection.Diagram;
         export import Media = CoreModule.Collection.Media;
         export import Meta = CoreModule.Collection.Meta;
@@ -60,6 +61,7 @@ declare namespace ChalkySticks {
         export import Base = AuthenticationModule.Core.Model.Base;
         export import Beacon = PlayersModule.Model.Beacon;
         export import Content = CoreModule.Model.Content;
+        export import ContentTag = CoreModule.Model.ContentTag;
         export import Diagram = PadModule.Model.Diagram;
         export import Geocode = CoreModule.Model.Geocode;
         export import Jwt = AuthenticationModule.Model.Jwt;
