@@ -74,8 +74,8 @@
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
 
 "@chalkysticks/sdk-venues@github:chalkysticks/sdk-venues#v1":
-  version "1.7.1"
-  resolved "https://codeload.github.com/chalkysticks/sdk-venues/tar.gz/b2221fda453198d6ba2035011cb6992d46dd89e9"
+  version "1.7.2"
+  resolved "https://codeload.github.com/chalkysticks/sdk-venues/tar.gz/af4f4552338806a2764fc1eb1c220db469dc7d96"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
