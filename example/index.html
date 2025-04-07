@@ -24,7 +24,7 @@
 			window.chalky = {
 				app: {
 					// apiUrl: 'http://localhost:8000/v3',
-					localUrl: 'http://localhost:8000/v3',
+					// localUrl: 'http://localhost:8000/v3',
 				},
 			};
 		</script>
@@ -38,27 +38,41 @@
 				limit: 128,
 			});
 
+			const venueModel = ChalkySticks.Factory.Venue.model({
+				id: '11117',
+			});
+
 			// venueCollection.getBaseUrl = function () {
 			// 	return 'https://example.com';
 			// 	return this.baseUrl;
 			// };
 
-			venueCollection.fetch();
+			await venueCollection.fetch();
 
-			console.log('Venue Collection', venueCollection.getBaseUrl());
+			await venueModel.fetch();
+
+			const json = venueModel.toJSON();
+
+			// console.log('checkins', JSON.stringify(json, null, 4));
+
+			// console.log('Venue Collection', venueCollection.getBaseUrl());
+			// console.log('Venue Model', JSON.stringify(venueModel.toJSON(), null, 4));
+			console.log('Venue Model', json);
 
 			// -----------------------------------------------------------------
 
-			// const venueMediaCollection = ChalkySticks.Factory.VenueMedia.collection();
-			const venueMediaCollection = new ChalkySticks.Collection.VenueMedia();
+			// // const venueMediaCollection = ChalkySticks.Factory.VenueMedia.collection();
+			// const venueMediaCollection = new ChalkySticks.Collection.VenueMedia();
 
-			venueMediaCollection
-				.table()
-				.random()
-				.fetch()
-				.then(() => console.log('Media', venueMediaCollection));
+			// venueMediaCollection
+			// 	.table()
+			// 	.random()
+			// 	.fetch()
+			// 	.then(() => {
+			// 		console.log('Media', venueMediaCollection);
+			// 	});
 
-			console.log('Venuue Media Collection', venueMediaCollection.getBaseUrl());
+			// console.log('Venuue Media Collection', venueMediaCollection.getBaseUrl());
 		</script>
 	</body>
 </html>
