@@ -36,16 +36,16 @@
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
 
 "@chalkysticks/sdk-core@github:chalkysticks/sdk-core":
-  version "1.35.5"
-  resolved "https://codeload.github.com/chalkysticks/sdk-core/tar.gz/aef9b3a4ae5694c56995e5cc44ded90887df7601"
+  version "1.35.6"
+  resolved "https://codeload.github.com/chalkysticks/sdk-core/tar.gz/f764b400a3d5877d293ee7228b246dc40a63e7d1"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@types/googlemaps" "^3.43.3"
     restmc "git+https://github.com/mattkenefick/restmc.git"
 
 "@chalkysticks/sdk-media@github:chalkysticks/sdk-media":
-  version "1.4.5"
-  resolved "git+ssh://git@github.com/chalkysticks/sdk-media.git#8bf3ff0fbf58a3aac04f3c3e71a39577f6348ce4"
+  version "1.4.6"
+  resolved "git+ssh://git@github.com/chalkysticks/sdk-media.git#1de43c179f9c2432ba941b30eee6d9b1c0386d2e"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"

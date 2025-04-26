@@ -33,6 +33,7 @@ declare namespace ChalkySticks {
         export import Currency = CoreModule.Enum.Currency;
         export import GameType = TVModule.Enum.GameType;
         export import MediaGroup = CoreModule.Enum.MediaGroup;
+        export import MediaSubgroup = CoreModule.Enum.MediaSubgroup;
         export import MediaType = CoreModule.Enum.MediaType;
         export import ProductType = CoreModule.Enum.ProductType;
         export import VenueType = VenuesModule.Enum.VenueType;
