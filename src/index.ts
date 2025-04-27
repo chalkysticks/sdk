@@ -11,6 +11,7 @@ namespace ChalkySticks {
 	export namespace Collection {
 		export import Advertisement = CoreModule.Collection.Advertisement;
 		export import Beacon = PlayersModule.Collection.Beacon;
+		export import Base = CoreModule.Collection.Base;
 		export import Content = CoreModule.Collection.Content;
 		export import ContentTag = CoreModule.Collection.ContentTag;
 		export import Diagram = PadModule.Collection.Diagram;
@@ -65,7 +66,7 @@ namespace ChalkySticks {
 	export namespace Model {
 		export import Advertisement = CoreModule.Model.Advertisement;
 		export import Authentication = AuthenticationModule.Model.Authentication;
-		export import Base = AuthenticationModule.Core.Model.Base;
+		export import Base = CoreModule.Model.Base;
 		export import Beacon = PlayersModule.Model.Beacon;
 		export import Content = CoreModule.Model.Content;
 		export import ContentTag = CoreModule.Model.ContentTag;
