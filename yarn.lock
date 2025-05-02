@@ -37,11 +37,21 @@
     restmc "git+https://github.com/mattkenefick/restmc.git"
 
 "@chalkysticks/sdk-core@github:chalkysticks/sdk-core":
-  version "1.36.1"
-  resolved "https://codeload.github.com/chalkysticks/sdk-core/tar.gz/2f425ad51fcfef1e83e5bb285791ef148235dcf9"
+  version "1.38.1"
+  resolved "https://codeload.github.com/chalkysticks/sdk-core/tar.gz/b9febd2d3a8c3e576543a4cfc5d7e5ed76b9803d"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@types/googlemaps" "^3.43.3"
+    restmc "git+https://github.com/mattkenefick/restmc.git"
+
+"@chalkysticks/sdk-extras@github:chalkysticks/sdk-extras":
+  version "1.9.0"
+  resolved "https://codeload.github.com/chalkysticks/sdk-extras/tar.gz/d63823c5b040e492c72cff0ebc5cccdc6f7e335a"
+  dependencies:
+    "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
+    "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
+    luxon "^3.5.0"
+    reflect-metadata "^0.2.2"
     restmc "git+https://github.com/mattkenefick/restmc.git"
 
 "@chalkysticks/sdk-media@github:chalkysticks/sdk-media":
@@ -78,8 +88,8 @@
     restmc "git+https://github.com/mattkenefick/restmc.git"
 
 "@chalkysticks/sdk-venues@github:chalkysticks/sdk-venues#v1":
-  version "1.7.5"
-  resolved "https://codeload.github.com/chalkysticks/sdk-venues/tar.gz/149fb9141ac6a279959e9f2717ff792fb9a97820"
+  version "1.8.0"
+  resolved "https://codeload.github.com/chalkysticks/sdk-venues/tar.gz/e9fe565ceb6ce76b9162dee2eb15b08ed1d87a28"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
