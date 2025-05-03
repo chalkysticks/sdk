@@ -13,6 +13,7 @@ namespace ChalkySticks {
 		export import Advertisement = CoreModule.Collection.Advertisement;
 		export import Beacon = PlayersModule.Collection.Beacon;
 		export import Base = CoreModule.Collection.Base;
+		export import Comment = CoreModule.Collection.Comment;
 		export import Content = CoreModule.Collection.Content;
 		export import ContentTag = CoreModule.Collection.ContentTag;
 		export import Diagram = PadModule.Collection.Diagram;
@@ -22,6 +23,7 @@ namespace ChalkySticks {
 		// export import Media = MediaModule.Collection.Media;
 		export import Meta = CoreModule.Collection.Meta;
 		export import Player = PlayersModule.Collection.Player;
+		export import Reaction = CoreModule.Collection.Reaction;
 		export import Rulebook = ExtrasModule.Collection.Rulebook;
 		export import Schedule = TVModule.Collection.Schedule;
 		export import Statistic = ExtrasModule.Collection.Statistic;
@@ -44,6 +46,7 @@ namespace ChalkySticks {
 		export import MediaSubgroup = CoreModule.Enum.MediaSubgroup;
 		export import MediaType = CoreModule.Enum.MediaType;
 		export import ProductType = CoreModule.Enum.ProductType;
+		export import ReactionType = CoreModule.Enum.ReactionType;
 		export import VenueType = VenuesModule.Enum.VenueType;
 	}
 
@@ -51,6 +54,7 @@ namespace ChalkySticks {
 		export import Advertisement = CoreModule.Factory.Advertisement;
 		export import Authentication = AuthenticationModule.Factory.Authentication;
 		export import Beacon = PlayersModule.Factory.Beacon;
+		export import Comment = CoreModule.Factory.Comment;
 		export import Content = CoreModule.Factory.Content;
 		export import Diagram = PadModule.Factory.Diagram;
 		export import Fact = ExtrasModule.Factory.Fact;
@@ -58,6 +62,7 @@ namespace ChalkySticks {
 		export import Geocode = CoreModule.Factory.Geocode;
 		export import Live = TVModule.Factory.Live;
 		export import Player = PlayersModule.Factory.Player;
+		export import Reaction = CoreModule.Factory.Reaction;
 		export import Rulebook = ExtrasModule.Factory.Rulebook;
 		export import Schedule = TVModule.Factory.Schedule;
 		export import Statistic = ExtrasModule.Factory.Statistic;
@@ -73,6 +78,7 @@ namespace ChalkySticks {
 		export import Authentication = AuthenticationModule.Model.Authentication;
 		export import Base = CoreModule.Model.Base;
 		export import Beacon = PlayersModule.Model.Beacon;
+		export import Comment = CoreModule.Model.Comment;
 		export import Content = CoreModule.Model.Content;
 		export import ContentTag = CoreModule.Model.ContentTag;
 		export import Diagram = PadModule.Model.Diagram;
@@ -83,6 +89,7 @@ namespace ChalkySticks {
 		export import Media = CoreModule.Model.Media;
 		export import Meta = CoreModule.Model.Meta;
 		export import Player = PlayersModule.Model.Player;
+		export import Reaction = CoreModule.Model.Reaction;
 		export import Rulebook = ExtrasModule.Model.Rulebook;
 		export import Schedule = TVModule.Model.Schedule;
 		export import Statistic = ExtrasModule.Model.Statistic;
