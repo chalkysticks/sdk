@@ -37,8 +37,8 @@
     restmc "git+https://github.com/mattkenefick/restmc.git"
 
 "@chalkysticks/sdk-core@github:chalkysticks/sdk-core":
-  version "1.40.5"
-  resolved "https://codeload.github.com/chalkysticks/sdk-core/tar.gz/4238b13870a115648c503d04068b89eb95cbe765"
+  version "1.40.6"
+  resolved "https://codeload.github.com/chalkysticks/sdk-core/tar.gz/7c40d9cb9fb3a9f7a0b7ad43c3a614cba7abc0d2"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@types/googlemaps" "^3.43.3"
