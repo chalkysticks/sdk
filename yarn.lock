@@ -88,8 +88,8 @@
     restmc "git+https://github.com/mattkenefick/restmc.git"
 
 "@chalkysticks/sdk-venues@github:chalkysticks/sdk-venues#v1":
-  version "1.9.0"
-  resolved "https://codeload.github.com/chalkysticks/sdk-venues/tar.gz/c02a8189d4270672c13782257051a82eb6611bb1"
+  version "1.9.1"
+  resolved "https://codeload.github.com/chalkysticks/sdk-venues/tar.gz/ac5e1ea93ed1fa0c112123f31f3459849bec8579"
   dependencies:
     "@chalkysticks/mrm-preset" "github:chalkysticks/mrm-preset"
     "@chalkysticks/sdk-core" "github:chalkysticks/sdk-core"
