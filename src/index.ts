@@ -30,6 +30,7 @@ namespace ChalkySticks {
 		export import User = CoreModule.Collection.User;
 		export import UserMedia = MediaModule.Collection.UserMedia;
 		export import Venue = VenuesModule.Collection.Venue;
+		export import VenueCheckin = VenuesModule.Collection.VenueCheckin;
 		export import VenueDetail = VenuesModule.Collection.VenueDetail;
 		export import VenueHour = VenuesModule.Collection.VenueHour;
 		export import VenueMedia = MediaModule.Collection.VenueMedia;
@@ -69,6 +70,7 @@ namespace ChalkySticks {
 		export import User = CoreModule.Factory.User;
 		export import UserMedia = MediaModule.Factory.UserMedia;
 		export import Venue = VenuesModule.Factory.Venue;
+		export import VenueCheckin = VenuesModule.Factory.VenueCheckin;
 		export import VenueMedia = MediaModule.Factory.VenueMedia;
 		export import Wallet = CoreModule.Factory.Wallet;
 	}
@@ -95,6 +97,7 @@ namespace ChalkySticks {
 		export import Statistic = ExtrasModule.Model.Statistic;
 		export import User = AuthenticationModule.Core.Model.User;
 		export import Venue = VenuesModule.Model.Venue;
+		export import VenueCheckin = VenuesModule.Model.VenueCheckin;
 		export import VenueDetail = VenuesModule.Model.VenueDetail;
 		export import VenueHour = VenuesModule.Model.VenueHour;
 		export import Wallet = CoreModule.Model.Wallet;
